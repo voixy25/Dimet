@@ -70,17 +70,25 @@ def category_sidebar(depth: int, categories: dict[str, str]) -> str:
     )
 
 
-def header(depth: int) -> str:
+def _current_attr(href: str, current: str) -> str:
+    """aria-current="page" for the nav entry that contains the current page."""
+    is_section = href.endswith("/")
+    active = current.startswith(href) if is_section else current == href
+    return ' aria-current="page"' if active and current else ""
+
+
+def header(depth: int, current: str = "") -> str:
     root = _depth_prefix(depth)
     top = "".join(
         f'<a href="{root}{href}" class="px-2">{label}</a>' for href, label in TOPBAR_LINKS
     )
     links = "".join(
-        f'<a href="{root}{href}" class="nav-link px-3 font-bold uppercase hover:text-brand-dark">{label}</a>'
+        f'<a href="{root}{href}" class="nav-link px-3 font-bold uppercase hover:text-brand-dark"{_current_attr(href, current)}>{label}</a>'
         for href, label in NAV
     )
     mobile = "".join(
-        f'<a href="{root}{href}" class="block min-h-11 py-3 text-base font-bold uppercase">{label}</a>' for href, label in NAV
+        f'<a href="{root}{href}" class="block min-h-11 py-3 text-base font-bold uppercase"{_current_attr(href, current)}>{label}</a>'
+        for href, label in NAV
     )
     return f"""  <header class="site-header sticky top-0 z-40">
     <div class="topbar">

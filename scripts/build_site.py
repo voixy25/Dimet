@@ -98,7 +98,7 @@ class Site:
         self.written.append(rel)
 
     def page(self, rel: str, title: str, desc: str, depth: int, body: str, og: str | None = None) -> None:
-        html = (head(title, desc, depth, rel, og) + header(depth)
+        html = (head(title, desc, depth, rel, og) + header(depth, rel)
                 + f'  <main id="main">\n{body}\n  </main>\n' + footer(depth))
         self.write(rel, html)
 
