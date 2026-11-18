@@ -8,6 +8,7 @@ from urllib.parse import quote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from layout import ADDRESS, EMAIL, PHONE, SITE_URL, footer, head, header  # noqa: E402
+from home_sections import home_body, shop_body  # noqa: E402
 from sanitize import clean_html  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -19,11 +20,12 @@ CATEGORIES = {
     "Cevi": "cev",
     "Tesnila": "tesnil",
     "Pene": "pena",
-    "Plošče": "ploca",
+    "Plošče": "plosc",
     "Palice": "palica",
     "Zračnice": "zracnic",
 }
 FEATURED_COUNT = 6
+HERO_SLUG = "cev-za-vodo-fi-10x17-10-bar-rdeca"
 Product = dict
 Route = "callable"
 
@@ -101,12 +103,12 @@ class Site:
         self.write(rel, html)
 
 
-def img_tag(rel: str | None, alt: str, depth: int, cls: str = "") -> str:
+def img_tag(rel: str | None, alt: str, depth: int, cls: str = "", eager: bool = False) -> str:
     if not rel or not (ROOT / rel).is_file():
         return ""
     width, height = image_size(rel)
     return (f'<img src="{"../" * depth}{esc(rel)}" alt="{esc(alt)}" width="{width}" height="{height}" '
-            f'loading="lazy" decoding="async" class="{cls}">')
+            f'loading="{"eager" if eager else "lazy"}" decoding="async" class="{cls}">')
 
 
 def mailto(title: str) -> str:
@@ -140,61 +142,19 @@ def product_card(p: Product, depth: int) -> str:
 
 def build_home(site: Site) -> None:
     featured = [p for p in site.products if p["in_stock"]][:FEATURED_COUNT]
-    chips = "".join(
-        f'<a class="chip" href="izdelki/?q={quote(term)}">{esc(label)}</a>'
-        for label, term in CATEGORIES.items()
-    )
+    hero = next((p for p in site.products if p["slug"] == HERO_SLUG and p["image"]), None)
+    if hero is None:
+        raise ValueError(f"Hero product '{HERO_SLUG}' missing or has no image")
+    hero_img = img_tag(hero["image"], hero["title"], 0, "h-auto w-full object-contain", eager=True)
     cards = "".join(product_card(p, 0) for p in featured)
-    facts = [("Dostava v 1-2 delovnih dneh", "Naročeno blago pošljemo hitro in zanesljivo."),
-             ("Vračilo v 14 dneh", "Če izdelek ne ustreza, ga brez skrbi vrnete."),
-             ("Osebna strokovna podpora", "Svetujemo pri izbiri pravega materiala.")]
-    trust = "".join(f'<div class="card p-6"><h3 class="font-semibold">{t}</h3><p class="mt-2 text-sm">{d}</p></div>' for t, d in facts)
-    body = f"""<section class="section"><div class="container-site">
-  <h1 class="h1-display">Industrijski materiali za vsak izziv</h1>
-  <p class="lead mt-4 max-w-2xl">Tehnične gume, cevi, pene, tesnila in trakovi za industrijo, obrt in delavnice. Zanesljiva kakovost, hitra dostava in nasvet strokovnjaka.</p>
-  <div class="mt-8 flex flex-wrap gap-3"><a class="btn btn-primary" href="izdelki/">Oglejte si izdelke</a><a class="btn btn-secondary" href="kontakt.html">Kontaktirajte nas</a></div>
-</div></section>
-<section class="section" aria-labelledby="kategorije"><div class="container-site">
-  <h2 class="h2-section" id="kategorije">Kategorije</h2>
-  <div class="mt-6 flex flex-wrap gap-3">{chips}</div>
-</div></section>
-<section class="section" aria-labelledby="izpostavljeno"><div class="container-site">
-  <h2 class="h2-section" id="izpostavljeno">Izpostavljeni izdelki</h2>
-  <div class="grid-products mt-6">{cards}</div>
-  <p class="mt-6"><a class="btn btn-ghost" href="izdelki/">Vsi izdelki</a></p>
-</div></section>
-<section class="section" aria-label="Zakaj Dimet"><div class="container-site"><div class="grid gap-4 md:grid-cols-3">{trust}</div></div></section>
-<section class="section"><div class="container-site">
-  <h2 class="h2-section">O podjetju Dimet</h2>
-  <p class="lead mt-3 max-w-2xl">Dimet d.o.o. že vrsto let oskrbuje industrijo in obrtnike z izbranimi tehničnimi materiali.</p>
-  <p class="mt-4"><a class="btn btn-ghost" href="o-nas.html">Več o nas</a></p>
-</div></section>
-<section class="section"><div class="container-site card p-6">
-  <h2 class="h2-section">Kontakt</h2>
-  <p class="mt-3"><a href="mailto:{EMAIL}">{EMAIL}</a> &middot; <a href="tel:{PHONE.replace(' ', '')}">{PHONE}</a></p>
-</div></section>"""
+    body = home_body(CATEGORIES, hero_img, cards)
     site.page("index.html", "Dimet", "Industrijski materiali za vsak izziv: gume, cevi, pene, tesnila in trakovi.", 0, body)
 
 
 def build_shop(site: Site) -> None:
     cards = "".join(product_card(p, 1) for p in site.products)
-    body = f"""<section class="section"><div class="container-site">
-  <h1 class="h1-display">Izdelki</h1>
-  <h2 class="sr-only">Seznam izdelkov</h2>
-  <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-    <label class="sr-only" for="product-search">Iskanje izdelkov</label>
-    <input id="product-search" type="search" placeholder="Poiščite izdelek" class="w-full rounded border border-line px-3 py-2 sm:max-w-sm" data-product-search>
-    <label class="sr-only" for="product-sort">Razvrsti</label>
-    <select id="product-sort" class="rounded border border-line px-3 py-2" data-product-sort>
-      <option value="name">Ime A-Z</option>
-      <option value="price-asc">Cena: nizka proti visoki</option>
-      <option value="price-desc">Cena: visoka proti nizki</option>
-    </select>
-  </div>
-  <div class="grid-products mt-8" data-product-grid>{cards}</div>
-  <p id="no-results" class="mt-8" hidden>Ni izdelkov, ki bi ustrezali iskanju.</p>
-</div></section>"""
-    site.page("izdelki/index.html", "Izdelki", "Vsi izdelki Dimet: gume, cevi, pene, tesnila in trakovi.", 1, body)
+    site.page("izdelki/index.html", "Izdelki", "Vsi izdelki Dimet: gume, cevi, pene, tesnila in trakovi.", 1,
+              shop_body(CATEGORIES, cards))
 
 
 def build_product(site: Site, p: Product) -> None:

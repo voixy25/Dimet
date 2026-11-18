@@ -4,8 +4,8 @@
 
 @layer base {
   html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
-  :focus-visible { outline: 2px solid #B45309; outline-offset: 2px; }
-  body { @apply bg-paper font-sans text-ink antialiased; }
+  :focus-visible { outline: 2px solid #007BC4; outline-offset: 2px; }
+  body { @apply bg-white font-sans text-ink antialiased; }
 }
 
 @layer components {
@@ -14,21 +14,34 @@
   .h1-display { @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]; }
   .h2-section { @apply text-2xl sm:text-3xl font-bold tracking-tight; }
   .lead { @apply text-lg text-muted leading-relaxed; }
-  .card { @apply rounded-xl border border-line bg-white p-6 shadow-sm; }
+  .card { @apply border border-line bg-white p-6; }
 
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold min-h-11 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent; }
-  .btn-primary { @apply bg-accent text-white hover:bg-accent-hover; }
-  .btn-secondary { @apply border border-ink text-ink hover:bg-ink hover:text-paper; }
-  .btn-ghost { @apply text-ink hover:bg-line/50 px-3; }
+  .btn { @apply inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold min-h-11 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand; }
+  .btn-primary { @apply bg-brand text-white hover:bg-brand-dark; }
+  .btn-secondary { @apply border border-ink text-ink hover:bg-ink hover:text-white; }
+  .btn-ghost { @apply text-ink hover:bg-grey px-3; }
 
-  .badge { @apply inline-flex rounded-full bg-line/60 px-2.5 py-1 text-xs font-medium text-graphite; }
-  .chip { @apply inline-flex min-h-11 items-center rounded-full border border-line bg-white px-4 py-2 text-sm font-medium hover:border-accent hover:text-accent; }
-  .nav-link { @apply inline-flex min-h-11 items-center text-sm font-medium text-graphite hover:text-accent; }
+  .badge { @apply inline-flex rounded-full bg-grey px-2.5 py-1 text-xs font-medium text-ink; }
+  .chip { @apply inline-flex min-h-11 items-center rounded-full border border-line bg-white px-4 py-2 text-sm font-medium hover:border-brand hover:text-brand-dark; }
+  .nav-link { @apply inline-flex min-h-11 items-center text-sm font-medium text-ink hover:text-brand-dark; }
   .footer-link { @apply inline-block py-2 underline-offset-4 hover:underline hover:text-white; }
   .skip-link { @apply sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2; }
   .breadcrumb { @apply flex flex-wrap items-center gap-2 text-sm text-muted; }
   .breadcrumb a { @apply inline-block py-2; }
   .grid-products { @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3; }
+
+  .btn-brand { @apply inline-flex min-h-11 items-center justify-center bg-brand px-5 py-3 text-sm font-bold uppercase text-white hover:bg-brand-dark; }
+  .topbar { @apply bg-brand-dark text-xs font-medium uppercase text-white sm:text-[13px]; }
+  .topbar a { @apply inline-flex min-h-11 items-center hover:underline; }
+  .bg-brand :focus-visible, .bg-brand-dark :focus-visible, .topbar :focus-visible { outline-color: #fff; }
+  .site-header { @apply border-b border-line bg-white; }
+  .category-box { @apply flex min-h-11 items-center bg-brand-dark px-4 text-sm font-bold uppercase tracking-wide text-white; }
+  .category-list { @apply border border-t-0 border-line bg-white text-sm; }
+  .category-list li + li { @apply border-t border-line; }
+  .category-list a { @apply flex min-h-11 items-center px-4 py-2 text-ink hover:bg-grey hover:text-brand-dark; }
+  .hero-panel { @apply bg-ink text-white; }
+  .promo-tile { @apply bg-grey p-6 text-ink; }
+  .section-title { @apply mb-8 border-b-2 border-brand pb-3 text-center text-xl font-bold uppercase tracking-wide text-ink sm:text-2xl; }
 
   .prose-site { @apply text-base leading-relaxed text-ink; }
   .prose-site > * + * { @apply mt-4; }
@@ -37,11 +50,11 @@
   .prose-site h3 { @apply mt-8 text-xl font-semibold tracking-tight; }
   .prose-site ul { @apply list-disc space-y-2 pl-6; }
   .prose-site ol { @apply list-decimal space-y-2 pl-6; }
-  .prose-site a { @apply text-accent underline underline-offset-4 hover:text-accent-hover; }
+  .prose-site a { @apply text-brand-dark underline underline-offset-4 hover:text-ink; }
   .prose-site strong { @apply font-semibold; }
   .prose-site img { @apply h-auto max-w-full rounded-xl; }
   .prose-site table { @apply w-full border-collapse text-left text-sm; }
-  .prose-site th { @apply border-b border-line bg-line/40 px-3 py-2 font-semibold; }
+  .prose-site th { @apply border-b border-line bg-grey px-3 py-2 font-semibold; }
   .prose-site td { @apply border-b border-line px-3 py-2; }
 }
 

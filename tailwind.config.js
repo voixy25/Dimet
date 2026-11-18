@@ -11,21 +11,26 @@ module.exports = {
   safelist: [
     "container-site", "section", "h1-display", "h2-section", "lead", "card",
     "btn", "btn-primary", "btn-secondary", "btn-ghost", "badge", "chip",
+    "topbar", "site-header", "category-box", "category-list", "hero-panel", "promo-tile", "section-title", "btn-brand",
     "nav-link", "footer-link", "skip-link", "breadcrumb", "grid-products", "prose-site",
   ],
   theme: {
     extend: {
       colors: {
-        paper: "#F7F5F0",
-        ink: "#1B1F23",
-        line: "#DAD6CC",
-        graphite: "#3A4149",
-        accent: "#B45309",
-        "accent-hover": "#92400E",
+        brand: "#007BC4",
+        "brand-dark": "#006CAB",
+        ink: "#0E0E0E",
+        grey: "#F6F6F6",
+        line: "#E5E5E5",
         muted: "#5B6470",
+        // legacy aliases
+        paper: "#F6F6F6",
+        graphite: "#0E0E0E",
+        accent: "#006CAB",
+        "accent-hover": "#005A8F",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Arial", "Helvetica", "Liberation Sans", "sans-serif"],
       },
       maxWidth: {
         container: "72rem",
