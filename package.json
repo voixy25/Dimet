@@ -1,0 +1,12 @@
+{
+  "name": "dimet-static",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/site.css --minify",
+    "build": "python3 scripts/build_site.py && npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
