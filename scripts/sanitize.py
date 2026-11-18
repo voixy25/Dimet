@@ -21,6 +21,11 @@ ALLOWED_ATTRS = {
     "img": {"src", "alt", "width", "height"},
     "td": {"colspan", "rowspan"},
     "th": {"colspan", "rowspan"},
+    "h2": {"id"},
+    "h3": {"id"},
+    "h4": {"id"},
+    "h5": {"id"},
+    "h6": {"id"},
 }
 DROP_WITH_CONTENT = {
     "script", "style", "form", "input", "select", "textarea", "button",

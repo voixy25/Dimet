@@ -12,483 +12,608 @@
   <meta property="og:description" content="Vsi izdelki Dimet: gume, cevi, pene, tesnila in trakovi.">
   <meta property="og:url" content="https://dimet.si/izdelki/index.html">
   <meta property="og:image" content="https://dimet.si/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&family=Poppins:wght@500;600;700&display=swap">
   <link rel="icon" href="../images/favicon.png" type="image/png">
   <link rel="stylesheet" href="../css/site.css">
   <script src="../js/site.js" defer></script>
 </head>
-<body class="min-h-screen bg-white text-ink antialiased">
+<body class="min-h-screen bg-white font-sans text-body-text antialiased">
   <a href="#main" class="skip-link">Preskoči na vsebino</a>
-  <header class="site-header sticky top-0 z-40">
-    <div class="topbar">
-      <div class="container-site flex flex-wrap items-center justify-between gap-x-4">
-        <p class="py-2">Delovni čas: pon-pet 8:00 - 16:00 | sob 8:00-12:00 | ned: zaprto</p>
-        <div class="hidden md:flex"><a href="../novice/" class="px-2">Novice</a><a href="../strani/pogosta-vprasanja.html" class="px-2">Pogosta vprašanja</a><a href="../strani/politika-zasebnosti.html" class="px-2">Politika zasebnosti</a></div>
+  <header class="site-header relative z-40 bg-white">
+    <div class="topbar hidden h-[42px] bg-[#007BC4] text-xs text-white lg:block">
+      <div class="container-site flex h-full items-center justify-between gap-4">
+        <p class="font-sans tracking-wide">DELOVNI ČAS | PON-PET: 8:00 - 16:00 | SOB: 8:00-12:00 | NED: ZAPRTO</p>
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-1 border-r border-white/25 pr-3"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="p-1.5 text-white/90 hover:text-white"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="p-1.5 text-white/90 hover:text-white"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-1.5 text-white/90 hover:text-white"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></div>
+          <div class="flex items-center"><a href="../novice/index.html" class="px-2.5 text-white hover:underline">Novice</a><span class="text-white/40" aria-hidden="true">|</span><a href="../strani/pogosta-vprasanja.html" class="px-2.5 text-white hover:underline">Pogosta vprašanja</a><span class="text-white/40" aria-hidden="true">|</span><a href="../strani/politika-zasebnosti.html" class="px-2.5 text-white hover:underline">Politika zasebnosti</a></div>
+        </div>
       </div>
     </div>
-    <div class="container-site flex items-center justify-between gap-4 py-3">
-      <a href="../index.html" class="inline-flex shrink-0" aria-label="Dimet, domača stran">
-        <img src="../images/dimet-logo.jpg" alt="Dimet" width="168" height="56" class="h-14 w-auto">
-      </a>
-      <form action="../izdelki/" method="get" role="search" class="hidden min-w-0 flex-1 sm:flex sm:max-w-xl">
-        <label for="site-search" class="sr-only">Iskanje izdelkov</label>
-        <input id="site-search" type="search" name="q" placeholder="Iskanje izdelkov" class="min-h-11 w-full min-w-0 border border-line px-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand">
-        <button type="submit" class="btn-brand"><span class="sr-only">Išči</span>
-          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-        </button>
-      </form>
-      <div class="flex items-center gap-2">
-        <a href="../kontakt.html" class="nav-link hidden font-bold uppercase sm:inline-flex">Kontakt</a>
-        <button type="button" class="btn btn-ghost lg:hidden" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav">
+    <div class="border-b border-[#E8E8E8] bg-white">
+      <div class="container-site flex h-[76px] items-center justify-between gap-4 lg:h-[105px] lg:gap-8">
+        <a href="../index.html" class="inline-flex shrink-0 items-center" aria-label="Dimet, domača stran">
+          <img src="../images/dimet-logo.jpg" alt="Dimet" width="250" height="41" class="h-auto w-[179px] lg:w-[250px]">
+        </a>
+        <form action="../izdelki/index.html" method="get" role="search" class="relative hidden min-w-0 flex-1 md:flex md:max-w-xl">
+          <label for="site-search" class="sr-only">Iskanje izdelkov</label>
+          <input id="site-search" type="search" name="q" placeholder="Iskanje izdelkov..." class="pill-search">
+          <button type="submit" aria-label="Išči" class="absolute right-1.5 top-1/2 inline-flex h-[36px] w-[36px] -translate-y-1/2 items-center justify-center rounded-full bg-[#007BC4] text-white transition hover:bg-[#006AA9]">
+            <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </button>
+        </form>
+      <div class="flex items-center gap-3 lg:gap-4">
+        <a href="tel:+38641317673" class="hidden items-center gap-2 text-sm font-bold text-[#242424] transition hover:text-[#007BC4] xl:inline-flex">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+386 41 317 673</span>
+        </a>
+        <a href="../kontakt.html" aria-label="Kontakt" title="Kontakt" class="hidden items-center gap-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#007BC4] sm:inline-flex">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span class="hidden md:inline">Kontakt</span>
+        </a>
+        <a href="../izdelki/index.html" aria-label="Katalog izdelkov" title="Izdelki" class="relative inline-flex items-center gap-1.5 p-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#007BC4]">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="hidden md:inline">Izdelki</span>
+        </a>
+        <button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-[#242424] hover:bg-[#F2F2F2] lg:hidden" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav">
           <span class="sr-only">Meni</span>
           <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
+      </div>
     </div>
-    <div class="hidden border-t border-line lg:block">
-      <nav class="container-site flex items-center" aria-label="Glavna navigacija"><a href="../index.html" class="nav-link px-3 font-bold uppercase hover:text-brand-dark">Domov</a><a href="../o-nas.html" class="nav-link px-3 font-bold uppercase hover:text-brand-dark">O nas</a><a href="../kontakt.html" class="nav-link px-3 font-bold uppercase hover:text-brand-dark">Kontakt</a><a href="../novice/" class="nav-link px-3 font-bold uppercase hover:text-brand-dark">Novice</a><a href="../izdelki/" class="nav-link px-3 font-bold uppercase hover:text-brand-dark" aria-current="page">Izdelki</a></nav>
+    <div class="hidden border-b border-[#E8E8E8] bg-white lg:block">
+      <div class="container-site flex h-[52px] items-center gap-6">
+        <div class="relative w-[300px] shrink-0" data-cat-menu data-default-open="false">
+          <button type="button" class="category-box" aria-expanded="false">
+            <span class="flex items-center gap-3">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+              <span>Kategorije</span>
+            </span>
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <nav aria-label="Kategorije" class="absolute left-0 top-full z-30 w-[300px] hidden shadow-lg"><ul class="category-list"><li><a href="../izdelki/index.html?cat=samokolnice"><span>Samokolnice</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Samokolnice</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=samokolnica" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Samokolnica DMT 80 L</a></li><li><a href="../izdelki/index.html?q=6404" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Samokolnica 6404</a></li><li><a href="../izdelki/index.html?q=rocaj" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Gumi ročaji</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=samokolnice" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=pnevmatike"><span>Pnevmatike</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Pnevmatike</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=mc50" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Moto pnevmatike</a></li><li><a href="../izdelki/index.html?q=186" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Kolesne gume</a></li><li><a href="../izdelki/index.html?q=390" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Vozičkovne gume</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=pnevmatike" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=zracnice"><span>Zračnice</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Zračnice</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=tr-75a" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Zračnice TR-75A</a></li><li><a href="../izdelki/index.html?q=tr-4" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Moto zračnice</a></li><li><a href="../izdelki/index.html?q=10x2" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Vozičkovne zračnice</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=zracnice" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=scitniki"><span>Ščitniki</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Ščitniki</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=scitnik%20moto" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Ščitniki moto</a></li><li><a href="../izdelki/index.html?q=11.00" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Industrijski ščitniki</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=scitniki" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=cevi"><span>Cevi</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Cevi</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=cev%20za%20vodo" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Cevi za vodo</a></li><li><a href="../izdelki/index.html?q=cev%20za%20bencin" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Cevi za bencin</a></li><li><a href="../izdelki/index.html?q=cev%20za%20zrak" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Cevi za zrak</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=cevi" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=profili"><span>Profili</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Profili</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=keder" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Profil U keder</a></li><li><a href="../izdelki/index.html?q=penasti" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Penasti profili</a></li><li><a href="../izdelki/index.html?q=prtljaznik" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Profili guma+kovina</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=profili" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=tesnila"><span>Tesnila</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Tesnila</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=tlacilko" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Tesnila za tlačilko</a></li><li><a href="../izdelki/index.html?q=damper" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Tesnila Damper</a></li><li><a href="../izdelki/index.html?q=tesnilni%20trak" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Tesnilni trakovi</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=tesnila" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=jermeni"><span>Jermeni</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Jermeni</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=jermen%20okrogli" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Okrogli jermeni</a></li><li><a href="../izdelki/index.html?q=li%20c" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Klinasti jermeni</a></li><li><a href="../izdelki/index.html?q=sawasbelt" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Zobati jermeni</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=jermeni" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=pena"><span>Pena</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Pena</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=zvocno%20izolacijo" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Zvočna izolacija</a></li><li><a href="../izdelki/index.html?q=profil%20penasti" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Penasti izdelki</a></li><li><a href="../izdelki/index.html?q=lepilo" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Lepila v razpršilu</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=pena" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=tehnicna-plastika"><span>Tehnična plastika</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Tehnična plastika</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=poliamid" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Poliamid PA 6G</a></li><li><a href="../izdelki/index.html?q=polietilen" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Polietilen PE/HD</a></li><li><a href="../izdelki/index.html?q=poliuretan" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Poliuretan plošče</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=tehnicna-plastika" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li><li><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki"><span>Drobni gumeni-tehnični izdelki</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a><div class="category-flyout"><p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">Drobni gumeni-tehnični izdelki</p><ul class="space-y-1"><li><a href="../izdelki/index.html?q=cep" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Gumi čepi</a></li><li><a href="../izdelki/index.html?q=natik" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Natiki</a></li><li><a href="../izdelki/index.html?q=vezice" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Vezice</a></li><li><a href="../izdelki/index.html?q=gumaflex" class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">Gumaflex</a></li></ul><p class="mt-3 border-t border-[#E8E8E8] pt-2"><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a></p></div></li></ul></nav>
+        </div>
+        <nav class="flex items-center" aria-label="Glavna navigacija"><a href="../index.html" class="nav-link px-4 font-sans text-[13px] font-bold uppercase tracking-wide">Domov</a><a href="../o-nas.html" class="nav-link px-4 font-sans text-[13px] font-bold uppercase tracking-wide">O nas</a><a href="../kontakt.html" class="nav-link px-4 font-sans text-[13px] font-bold uppercase tracking-wide">Kontakt</a><a href="../izdelki/index.html" class="nav-link px-4 font-sans text-[13px] font-bold uppercase tracking-wide" aria-current="page">Izdelki</a><a href="../novice/index.html" class="nav-link px-4 font-sans text-[13px] font-bold uppercase tracking-wide">Novice</a></nav>
+      </div>
     </div>
-    <nav id="mobile-nav" class="hidden border-t border-line px-4 pb-4 lg:hidden" aria-label="Mobilna navigacija"><a href="../index.html" class="block min-h-11 py-3 text-base font-bold uppercase">Domov</a><a href="../o-nas.html" class="block min-h-11 py-3 text-base font-bold uppercase">O nas</a><a href="../kontakt.html" class="block min-h-11 py-3 text-base font-bold uppercase">Kontakt</a><a href="../novice/" class="block min-h-11 py-3 text-base font-bold uppercase">Novice</a><a href="../izdelki/" class="block min-h-11 py-3 text-base font-bold uppercase" aria-current="page">Izdelki</a></nav>
+    <nav id="mobile-nav" class="hidden max-h-[calc(100vh-76px)] overflow-y-auto border-b border-[#E8E8E8] bg-white px-4 pb-5 pt-3 lg:hidden" aria-label="Mobilna navigacija">
+      <form action="../izdelki/index.html" method="get" role="search" class="relative mb-3">
+        <label for="mobile-search" class="sr-only">Iskanje izdelkov</label>
+        <input id="mobile-search" type="search" name="q" placeholder="Iskanje izdelkov..." class="pill-search pr-12">
+        <button type="submit" aria-label="Išči" class="absolute right-1.5 top-1/2 inline-flex h-[36px] w-[36px] -translate-y-1/2 items-center justify-center rounded-full bg-[#007BC4] text-white">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        </button>
+      </form>
+      <div><a href="../index.html" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]">Domov</a><a href="../o-nas.html" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]">O nas</a><a href="../kontakt.html" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]">Kontakt</a><a href="../izdelki/index.html" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]" aria-current="page">Izdelki</a><a href="../novice/index.html" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]">Novice</a></div>
+      <div class="mt-4">
+        <p class="mb-2 font-heading text-xs font-semibold uppercase tracking-wider text-[#242424]">Kategorije</p>
+        <div class="grid grid-cols-1 gap-0.5"><a href="../izdelki/index.html?cat=samokolnice" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Samokolnice</a><a href="../izdelki/index.html?cat=pnevmatike" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Pnevmatike</a><a href="../izdelki/index.html?cat=zracnice" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Zračnice</a><a href="../izdelki/index.html?cat=scitniki" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Ščitniki</a><a href="../izdelki/index.html?cat=cevi" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Cevi</a><a href="../izdelki/index.html?cat=profili" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Profili</a><a href="../izdelki/index.html?cat=tesnila" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Tesnila</a><a href="../izdelki/index.html?cat=jermeni" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Jermeni</a><a href="../izdelki/index.html?cat=pena" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Pena</a><a href="../izdelki/index.html?cat=tehnicna-plastika" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Tehnična plastika</a><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">Drobni gumeni-tehnični izdelki</a></div>
+      </div>
+    </nav>
   </header>
   <main id="main">
 <div class="container-site section">
 <div class="grid gap-8 lg:grid-cols-[280px_1fr]">
-  <nav aria-label="Kategorije" class="hidden lg:block"><p class="category-box">Kategorije</p><ul class="category-list"><li><a href="../izdelki/?q=guma">Gume</a></li><li><a href="../izdelki/?q=cev">Cevi</a></li><li><a href="../izdelki/?q=tesnil">Tesnila</a></li><li><a href="../izdelki/?q=pena">Pene</a></li><li><a href="../izdelki/?q=plosc">Plošče</a></li><li><a href="../izdelki/?q=palica">Palice</a></li><li><a href="../izdelki/?q=zracnic">Zračnice</a></li></ul></nav>
+  <aside aria-label="Filter kategorij" class="hidden lg:block"><p class="category-box">Kategorije</p><ul class="border border-t-0 border-[#E8E8E8] bg-white"><li><a href="index.html" data-cat-filter="" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] font-semibold text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Vsi izdelki</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=cevi" data-cat-filter="cevi" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Cevi</span><span class="text-xs text-[#595959]">(3)</span></a><ul class="border-t border-[#E8E8E8] bg-[#FAFAFA] py-1.5"><li><a href="index.html?cat=gorivo" data-cat-filter="gorivo" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Gorivo</span><span>(1)</span></a></li><li><a href="index.html?cat=voda" data-cat-filter="voda" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Voda</span><span>(1)</span></a></li><li><a href="index.html?cat=zrak" data-cat-filter="zrak" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Zrak</span><span>(1)</span></a></li></ul></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=drobni-gumeni-tehnicni-izdelki" data-cat-filter="drobni-gumeni-tehnicni-izdelki" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Drobni gumeni-tehnični izdelki</span><span class="text-xs text-[#595959]">(3)</span></a><ul class="border-t border-[#E8E8E8] bg-[#FAFAFA] py-1.5"><li><a href="index.html?cat=elastike" data-cat-filter="elastike" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Elastike</span><span>(1)</span></a></li><li><a href="index.html?cat=gumi-cep" data-cat-filter="gumi-cep" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Gumi čep</span><span>(1)</span></a></li><li><a href="index.html?cat=natik" data-cat-filter="natik" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Natik</span><span>(1)</span></a></li><li><a href="index.html?cat=odbijac" data-cat-filter="odbijac" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Odbijač</span><span>(0)</span></a></li><li><a href="index.html?cat=ostali-izdelki" data-cat-filter="ostali-izdelki" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Ostali izdelki</span><span>(0)</span></a></li></ul></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=jermeni" data-cat-filter="jermeni" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Jermeni</span><span class="text-xs text-[#595959]">(3)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=pena" data-cat-filter="pena" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Pena</span><span class="text-xs text-[#595959]">(3)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=pnevmatike" data-cat-filter="pnevmatike" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Pnevmatike</span><span class="text-xs text-[#595959]">(3)</span></a><ul class="border-t border-[#E8E8E8] bg-[#FAFAFA] py-1.5"><li><a href="index.html?cat=go-kart" data-cat-filter="go-kart" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Go-kart</span><span>(1)</span></a></li><li><a href="index.html?cat=kolesarske-pnevmatike" data-cat-filter="kolesarske-pnevmatike" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Kolesarske</span><span>(1)</span></a></li><li><a href="index.html?cat=motorske-pnevmatike" data-cat-filter="motorske-pnevmatike" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Motorske</span><span>(1)</span></a></li><li><a href="index.html?cat=prikolica" data-cat-filter="prikolica" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Prikolica</span><span>(0)</span></a></li></ul></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=profili" data-cat-filter="profili" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Profili</span><span class="text-xs text-[#595959]">(3)</span></a><ul class="border-t border-[#E8E8E8] bg-[#FAFAFA] py-1.5"><li><a href="index.html?cat=penasti" data-cat-filter="penasti" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Penasti</span><span>(1)</span></a></li><li><a href="index.html?cat=s-kovino" data-cat-filter="s-kovino" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>S kovino</span><span>(1)</span></a></li><li><a href="index.html?cat=trdi" data-cat-filter="trdi" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Trdi</span><span>(1)</span></a></li></ul></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=samokolnice" data-cat-filter="samokolnice" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Samokolnice</span><span class="text-xs text-[#595959]">(3)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=scitniki" data-cat-filter="scitniki" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Ščitniki</span><span class="text-xs text-[#595959]">(2)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=tehnicna-plastika" data-cat-filter="tehnicna-plastika" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Tehnična plastika</span><span class="text-xs text-[#595959]">(3)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=tesnila" data-cat-filter="tesnila" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Tesnila</span><span class="text-xs text-[#595959]">(3)</span></a></li><li class="border-t border-[#E8E8E8]"><a href="index.html?cat=zracnice" data-cat-filter="zracnice" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Zračnice</span><span class="text-xs text-[#595959]">(4)</span></a><ul class="border-t border-[#E8E8E8] bg-[#FAFAFA] py-1.5"><li><a href="index.html?cat=elektricni-skiro" data-cat-filter="elektricni-skiro" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Električni skiro</span><span>(1)</span></a></li><li><a href="index.html?cat=kolesarske" data-cat-filter="kolesarske" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Kolesarske</span><span>(1)</span></a></li><li><a href="index.html?cat=motorske" data-cat-filter="motorske" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Motorske</span><span>(1)</span></a></li><li><a href="index.html?cat=vilicarske" data-cat-filter="vilicarske" data-base-color="text-[#555555]" class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]"><span>Viličarske</span><span>(1)</span></a></li></ul></li></ul></aside>
   <div>
-  <h1 class="h1-display text-ink">Izdelki</h1>
+  <div class="flex flex-wrap items-baseline justify-between gap-2 border-b border-[#E8E8E8] pb-3">
+    <h1 class="h1-display text-[#242424]" data-shop-heading>Izdelki</h1>
+    <p class="text-sm text-[#595959]" data-product-count aria-live="polite"></p>
+  </div>
   <h2 class="sr-only">Seznam izdelkov</h2>
-  <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+  <div class="mt-5 flex flex-wrap gap-2 lg:hidden" aria-label="Hitri filtri kategorij"><a href="index.html" data-cat-filter="" data-base-color="text-title-dark" class="chip text-xs">Vsi izdelki</a><a href="index.html?cat=cevi" data-cat-filter="cevi" data-base-color="text-title-dark" class="chip text-xs">Cevi</a><a href="index.html?cat=gorivo" data-cat-filter="gorivo" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Cevi: Gorivo</a><a href="index.html?cat=voda" data-cat-filter="voda" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Cevi: Voda</a><a href="index.html?cat=zrak" data-cat-filter="zrak" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Cevi: Zrak</a><a href="index.html?cat=drobni-gumeni-tehnicni-izdelki" data-cat-filter="drobni-gumeni-tehnicni-izdelki" data-base-color="text-title-dark" class="chip text-xs">Drobni gumeni-tehnični izdelki</a><a href="index.html?cat=elastike" data-cat-filter="elastike" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Drobni gumeni-tehnični izdelki: Elastike</a><a href="index.html?cat=gumi-cep" data-cat-filter="gumi-cep" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Drobni gumeni-tehnični izdelki: Gumi čep</a><a href="index.html?cat=natik" data-cat-filter="natik" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Drobni gumeni-tehnični izdelki: Natik</a><a href="index.html?cat=odbijac" data-cat-filter="odbijac" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Drobni gumeni-tehnični izdelki: Odbijač</a><a href="index.html?cat=ostali-izdelki" data-cat-filter="ostali-izdelki" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Drobni gumeni-tehnični izdelki: Ostali izdelki</a><a href="index.html?cat=jermeni" data-cat-filter="jermeni" data-base-color="text-title-dark" class="chip text-xs">Jermeni</a><a href="index.html?cat=pena" data-cat-filter="pena" data-base-color="text-title-dark" class="chip text-xs">Pena</a><a href="index.html?cat=pnevmatike" data-cat-filter="pnevmatike" data-base-color="text-title-dark" class="chip text-xs">Pnevmatike</a><a href="index.html?cat=go-kart" data-cat-filter="go-kart" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Pnevmatike: Go-kart</a><a href="index.html?cat=kolesarske-pnevmatike" data-cat-filter="kolesarske-pnevmatike" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Pnevmatike: Kolesarske</a><a href="index.html?cat=motorske-pnevmatike" data-cat-filter="motorske-pnevmatike" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Pnevmatike: Motorske</a><a href="index.html?cat=prikolica" data-cat-filter="prikolica" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Pnevmatike: Prikolica</a><a href="index.html?cat=profili" data-cat-filter="profili" data-base-color="text-title-dark" class="chip text-xs">Profili</a><a href="index.html?cat=penasti" data-cat-filter="penasti" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Profili: Penasti</a><a href="index.html?cat=s-kovino" data-cat-filter="s-kovino" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Profili: S kovino</a><a href="index.html?cat=trdi" data-cat-filter="trdi" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Profili: Trdi</a><a href="index.html?cat=samokolnice" data-cat-filter="samokolnice" data-base-color="text-title-dark" class="chip text-xs">Samokolnice</a><a href="index.html?cat=scitniki" data-cat-filter="scitniki" data-base-color="text-title-dark" class="chip text-xs">Ščitniki</a><a href="index.html?cat=tehnicna-plastika" data-cat-filter="tehnicna-plastika" data-base-color="text-title-dark" class="chip text-xs">Tehnična plastika</a><a href="index.html?cat=tesnila" data-cat-filter="tesnila" data-base-color="text-title-dark" class="chip text-xs">Tesnila</a><a href="index.html?cat=zracnice" data-cat-filter="zracnice" data-base-color="text-title-dark" class="chip text-xs">Zračnice</a><a href="index.html?cat=elektricni-skiro" data-cat-filter="elektricni-skiro" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Zračnice: Električni skiro</a><a href="index.html?cat=kolesarske" data-cat-filter="kolesarske" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Zračnice: Kolesarske</a><a href="index.html?cat=motorske" data-cat-filter="motorske" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Zračnice: Motorske</a><a href="index.html?cat=vilicarske" data-cat-filter="vilicarske" data-base-color="text-title-dark" class="chip text-xs bg-[#FAFAFA]">Zračnice: Viličarske</a></div>
+  <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
     <label class="sr-only" for="product-search">Iskanje izdelkov</label>
-    <input id="product-search" type="search" placeholder="Poiščite izdelek" class="w-full rounded border border-line px-3 py-2 sm:max-w-sm" data-product-search>
+    <input id="product-search" type="search" placeholder="Poiščite izdelek" class="w-full rounded-full border border-[#E8E8E8] px-4 py-2 text-sm sm:max-w-sm" data-product-search>
     <label class="sr-only" for="product-sort">Razvrsti</label>
-    <select id="product-sort" class="rounded border border-line px-3 py-2" data-product-sort>
+    <select id="product-sort" class="rounded-full border border-[#E8E8E8] bg-white px-4 py-2 text-sm" data-product-sort>
       <option value="name">Ime A-Z</option>
       <option value="price-asc">Cena: nizka proti visoki</option>
       <option value="price-desc">Cena: visoka proti nizki</option>
     </select>
+    <button type="button" data-filter-reset class="hidden rounded-full border border-[#E8E8E8] px-4 py-2 text-xs font-semibold text-[#007BC4] hover:border-[#007BC4]">Ponastavi filter</button>
   </div>
-  <div class="grid-products mt-8" data-product-grid><article class="card flex flex-col overflow-hidden" data-product-card data-title="CEV ZA VODO FI 10X17 10 BAR RDEČA" data-price="1.89">
-  <a href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/cev_za_vodo_700x700.jpg" alt="CEV ZA VODO FI 10X17 10 BAR RDEČA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html">CEV ZA VODO FI 10X17 10 BAR RDEČA</a></h3>
-    <p class="text-lg font-bold">1,89 €</p>
-    <p class="text-xs text-muted">Šifra: 16643</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=CEV%20ZA%20VODO%20FI%2010X17%2010%20BAR%20RDE%C4%8CA">Povpraševanje</a>
+  <div class="grid-products mt-8" data-product-grid><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="CEV ZA VODO FI 10X17 10 BAR RDEČA" data-price="1.89" data-categories="cevi,voda" data-category-names="Cevi,Voda">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html" class="block h-full w-full"><img src="../images/cev_za_vodo_700x700.jpg" alt="CEV ZA VODO FI 10X17 10 BAR RDEČA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html" class="transition hover:text-brand">CEV ZA VODO FI 10X17 10 BAR RDEČA</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=cevi" class="transition hover:text-brand">Cevi</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">1,89 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/cev-za-vodo-fi-10x17-10-bar-rdeca.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=CEV%20ZA%20VODO%20FI%2010X17%2010%20BAR%20RDE%C4%8CA">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)" data-price="2.82">
-  <a href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/grupa_282_700x700.jpg" alt="CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html">CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)</a></h3>
-    <p class="text-lg font-bold">2,82 €</p>
-    <p class="text-xs text-muted">Šifra: 00607</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=CEV%20ZA%20BENCIN%203.5X9.5%20%281/8%27%27%29">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)" data-price="2.82" data-categories="cevi,gorivo" data-category-names="Cevi,Gorivo">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html" class="block h-full w-full"><img src="../images/grupa_282_700x700.jpg" alt="CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html" class="transition hover:text-brand">CEV ZA BENCIN 3.5X9.5 (1/8&#x27;&#x27;)</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=cevi" class="transition hover:text-brand">Cevi</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">2,82 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/cev-za-bencin-3-5x9-5-10bar-1-8.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=CEV%20ZA%20BENCIN%203.5X9.5%20%281/8%27%27%29">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="CEV ZA ZRAK FI 6X14 20 BAR ČRNA" data-price="1.73">
-  <a href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/zrak_3_1_700x700.jpg" alt="CEV ZA ZRAK FI 6X14 20 BAR ČRNA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html">CEV ZA ZRAK FI 6X14 20 BAR ČRNA</a></h3>
-    <p class="text-lg font-bold">1,73 €</p>
-    <p class="text-xs text-muted">Šifra: 17914</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=CEV%20ZA%20ZRAK%20FI%206X14%2020%20BAR%20%C4%8CRNA">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="CEV ZA ZRAK FI 6X14 20 BAR ČRNA" data-price="1.73" data-categories="cevi,zrak" data-category-names="Cevi,Zrak">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html" class="block h-full w-full"><img src="../images/zrak_3_1_700x700.jpg" alt="CEV ZA ZRAK FI 6X14 20 BAR ČRNA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html" class="transition hover:text-brand">CEV ZA ZRAK FI 6X14 20 BAR ČRNA</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=cevi" class="transition hover:text-brand">Cevi</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">1,73 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/cev-za-zrak-fi-6x14-20-bar-crna.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=CEV%20ZA%20ZRAK%20FI%206X14%2020%20BAR%20%C4%8CRNA">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMA 100/80X17 MC50 52H TL" data-price="76.39">
-  <a href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/09083_700x700.jpg" alt="GUMA 100/80X17 MC50 52H TL" width="278" height="567" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html">GUMA 100/80X17 MC50 52H TL</a></h3>
-    <p class="text-lg font-bold">76,39 €</p>
-    <p class="text-xs text-muted">Šifra: 09083</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMA%20100/80X17%20MC50%2052H%20TL">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMA 100/80X17 MC50 52H TL" data-price="52.71" data-categories="pnevmatike,motorske-pnevmatike" data-category-names="Pnevmatike,Motorske">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    <div class="absolute left-3 top-3 z-10 flex flex-wrap gap-1.5"><span class="inline-flex items-center rounded-full bg-[#007BC4] px-2.5 py-0.5 font-heading text-xs font-semibold text-white">-31%</span></div>
+    <a href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html" class="block h-full w-full"><img src="../images/09083_700x700.jpg" alt="GUMA 100/80X17 MC50 52H TL" width="278" height="567" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html" class="transition hover:text-brand">GUMA 100/80X17 MC50 52H TL</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pnevmatike" class="transition hover:text-brand">Pnevmatike</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="line-through text-[#595959] mr-2 text-sm">76,39 €</span> <span class="font-bold text-brand text-base">52,71 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/mo-pl-100-80x17-mc50-52h-tl.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMA%20100/80X17%20MC50%2052H%20TL">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMA 121/2X1.75X21/4 S-186 ČRN 47-203" data-price="7.16">
-  <a href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/kolo_700x700.jpg" alt="GUMA 121/2X1.75X21/4 S-186 ČRN 47-203" width="700" height="539" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html">GUMA 121/2X1.75X21/4 S-186 ČRN 47-203</a></h3>
-    <p class="text-lg font-bold">7,16 €</p>
-    <p class="text-xs text-muted">Šifra: 12925</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMA%20121/2X1.75X21/4%20S-186%20%C4%8CRN%2047-203">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMA 121/2X1.75X21/4 S-186 ČRN 47-203" data-price="7.16" data-categories="pnevmatike,kolesarske-pnevmatike" data-category-names="Pnevmatike,Kolesarske">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html" class="block h-full w-full"><img src="../images/kolo_700x700.jpg" alt="GUMA 121/2X1.75X21/4 S-186 ČRN 47-203" width="700" height="539" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html" class="transition hover:text-brand">GUMA 121/2X1.75X21/4 S-186 ČRN 47-203</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pnevmatike" class="transition hover:text-brand">Pnevmatike</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">7,16 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/vl-pl-121-2x1-75x21-4-s-186-47-203-crn.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMA%20121/2X1.75X21/4%20S-186%20%C4%8CRN%2047-203">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMA 10X4.50X5 4PR S-390 TL RENT" data-price="33.14">
-  <a href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/go_kart_700x700.jpg" alt="GUMA 10X4.50X5 4PR S-390 TL RENT" width="700" height="539" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html">GUMA 10X4.50X5 4PR S-390 TL RENT</a></h3>
-    <p class="text-lg font-bold">33,14 €</p>
-    <p class="text-xs text-muted">Šifra: 13509</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMA%2010X4.50X5%204PR%20S-390%20TL%20RENT">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMA 10X4.50X5 4PR S-390 TL RENT" data-price="23.20" data-categories="pnevmatike,go-kart" data-category-names="Pnevmatike,Go-kart">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    <div class="absolute left-3 top-3 z-10 flex flex-wrap gap-1.5"><span class="inline-flex items-center rounded-full bg-[#007BC4] px-2.5 py-0.5 font-heading text-xs font-semibold text-white">-30%</span></div>
+    <a href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html" class="block h-full w-full"><img src="../images/go_kart_700x700.jpg" alt="GUMA 10X4.50X5 4PR S-390 TL RENT" width="700" height="539" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html" class="transition hover:text-brand">GUMA 10X4.50X5 4PR S-390 TL RENT</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pnevmatike" class="transition hover:text-brand">Pnevmatike</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="line-through text-[#595959] mr-2 text-sm">33,14 €</span> <span class="font-bold text-brand text-base">23,20 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/pl-kart-10x4-50x5-4pr-s-390-tl-rent.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMA%2010X4.50X5%204PR%20S-390%20TL%20RENT">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm" data-price="3.06">
-  <a href="../izdelki/profil-u-keder.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/a2-051_700x700.jpg" alt="PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm" width="408" height="411" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/profil-u-keder.html">PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm</a></h3>
-    <p class="text-lg font-bold">3,06 €</p>
-    <p class="text-xs text-muted">Šifra: 13805</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/profil-u-keder.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PROFIL%20%22U%22%20KEDER%20A2%20051%2011%2C8x9%20za%201-3mm">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm" data-price="3.06" data-categories="profili,trdi" data-category-names="Profili,Trdi">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/profil-u-keder.html" class="block h-full w-full"><img src="../images/a2-051_700x700.jpg" alt="PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm" width="408" height="411" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/profil-u-keder.html" class="transition hover:text-brand">PROFIL &quot;U&quot; KEDER A2 051 11,8x9 za 1-3mm</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=profili" class="transition hover:text-brand">Profili</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">3,06 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/profil-u-keder.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PROFIL%20%22U%22%20KEDER%20A2%20051%2011%2C8x9%20za%201-3mm">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PROFIL PENASTI 04001 E15 ČRN" data-price="6.29">
-  <a href="../izdelki/profil-penasti-04001-e15-crn.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/profil_penast_700x700.jpg" alt="PROFIL PENASTI 04001 E15 ČRN" width="376" height="212" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/profil-penasti-04001-e15-crn.html">PROFIL PENASTI 04001 E15 ČRN</a></h3>
-    <p class="text-lg font-bold">6,29 €</p>
-    <p class="text-xs text-muted">Šifra: 02883</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/profil-penasti-04001-e15-crn.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PROFIL%20PENASTI%2004001%20E15%20%C4%8CRN">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PROFIL PENASTI 04001 E15 ČRN" data-price="6.29" data-categories="profili,penasti" data-category-names="Profili,Penasti">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/profil-penasti-04001-e15-crn.html" class="block h-full w-full"><img src="../images/profil_penast_700x700.jpg" alt="PROFIL PENASTI 04001 E15 ČRN" width="376" height="212" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/profil-penasti-04001-e15-crn.html" class="transition hover:text-brand">PROFIL PENASTI 04001 E15 ČRN</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=profili" class="transition hover:text-brand">Profili</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">6,29 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/profil-penasti-04001-e15-crn.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PROFIL%20PENASTI%2004001%20E15%20%C4%8CRN">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PROFIL GUMA+KOV. ZA PRTLJAŽNIK" data-price="3.96">
-  <a href="../izdelki/profil-guma-kov-za-prtljaznik.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/profil_z_gumo_700x700.jpg" alt="PROFIL GUMA+KOV. ZA PRTLJAŽNIK" width="570" height="551" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/profil-guma-kov-za-prtljaznik.html">PROFIL GUMA+KOV. ZA PRTLJAŽNIK</a></h3>
-    <p class="text-lg font-bold">3,96 €</p>
-    <p class="text-xs text-muted">Šifra: 16826</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/profil-guma-kov-za-prtljaznik.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PROFIL%20GUMA%2BKOV.%20ZA%20PRTLJA%C5%BDNIK">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PROFIL GUMA+KOV. ZA PRTLJAŽNIK" data-price="3.96" data-categories="profili,s-kovino" data-category-names="Profili,S kovino">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/profil-guma-kov-za-prtljaznik.html" class="block h-full w-full"><img src="../images/profil_z_gumo_700x700.jpg" alt="PROFIL GUMA+KOV. ZA PRTLJAŽNIK" width="570" height="551" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/profil-guma-kov-za-prtljaznik.html" class="transition hover:text-brand">PROFIL GUMA+KOV. ZA PRTLJAŽNIK</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=profili" class="transition hover:text-brand">Profili</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">3,96 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/profil-guma-kov-za-prtljaznik.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PROFIL%20GUMA%2BKOV.%20ZA%20PRTLJA%C5%BDNIK">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="Samokolnica DMT 80 L – Varjena" data-price="64.90">
-  <a href="../izdelki/samokolnica-dmt-80-l-varjena.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/Samokolnica-2.jpg" alt="Samokolnica DMT 80 L – Varjena" width="700" height="400" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/samokolnica-dmt-80-l-varjena.html">Samokolnica DMT 80 L – Varjena</a></h3>
-    <p class="text-lg font-bold">64,90 €</p>
-    <p class="text-xs text-muted">Šifra: 15756</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/samokolnica-dmt-80-l-varjena.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=Samokolnica%20DMT%2080%20L%20%E2%80%93%20Varjena">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="Samokolnica DMT 80 L – Varjena" data-price="59.90" data-categories="samokolnice" data-category-names="Samokolnice">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    <div class="absolute left-3 top-3 z-10 flex flex-wrap gap-1.5"><span class="inline-flex items-center rounded-full bg-[#007BC4] px-2.5 py-0.5 font-heading text-xs font-semibold text-white">-8%</span></div>
+    <a href="../izdelki/samokolnica-dmt-80-l-varjena.html" class="block h-full w-full"><img src="../images/Samokolnica-2.jpg" alt="Samokolnica DMT 80 L – Varjena" width="700" height="400" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/samokolnica-dmt-80-l-varjena.html" class="transition hover:text-brand">Samokolnica DMT 80 L – Varjena</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=samokolnice" class="transition hover:text-brand">Samokolnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="line-through text-[#595959] mr-2 text-sm">64,90 €</span> <span class="font-bold text-brand text-base">59,90 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/samokolnica-dmt-80-l-varjena.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=Samokolnica%20DMT%2080%20L%20%E2%80%93%20Varjena">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32" data-price="3.59">
-  <a href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/rocaj_32mm_700x700.jpg" alt="GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32" width="700" height="394" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html">GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32</a></h3>
-    <p class="text-lg font-bold">3,59 €</p>
-    <p class="text-xs text-muted">Šifra: 18924</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMI%20RO%C4%8CAJ%20ZA%20VELIKO%20SAMOKOLNICO%20FI%2032">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32" data-price="3.59" data-categories="samokolnice" data-category-names="Samokolnice">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html" class="block h-full w-full"><img src="../images/rocaj_32mm_700x700.jpg" alt="GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32" width="700" height="394" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html" class="transition hover:text-brand">GUMI ROČAJ ZA VELIKO SAMOKOLNICO FI 32</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=samokolnice" class="transition hover:text-brand">Samokolnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">3,59 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/rocaj-gumi-za-veliko-samokolnico-fi-32.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMI%20RO%C4%8CAJ%20ZA%20VELIKO%20SAMOKOLNICO%20FI%2032">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="SAMOKOLNICA 6404" data-price="54.90">
-  <a href="../izdelki/samokolnica-6404.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/samokolnica_700x700.jpg" alt="SAMOKOLNICA 6404" width="468" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/samokolnica-6404.html">SAMOKOLNICA 6404</a></h3>
-    <p class="text-lg font-bold">54,90 €</p>
-    <p class="text-xs text-muted">Šifra: 09854</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/samokolnica-6404.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=SAMOKOLNICA%206404">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="SAMOKOLNICA 6404" data-price="54.90" data-categories="samokolnice" data-category-names="Samokolnice">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/samokolnica-6404.html" class="block h-full w-full"><img src="../images/samokolnica_700x700.jpg" alt="SAMOKOLNICA 6404" width="468" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/samokolnica-6404.html" class="transition hover:text-brand">SAMOKOLNICA 6404</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=samokolnice" class="transition hover:text-brand">Samokolnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">54,90 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/samokolnica-6404.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=SAMOKOLNICA%206404">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ZRAČNICA 8.25X15 TR-75A" data-price="16.11">
-  <a href="../izdelki/zr-8-25x15-tr-75a.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/kriv_700x700.jpg" alt="ZRAČNICA 8.25X15 TR-75A" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/zr-8-25x15-tr-75a.html">ZRAČNICA 8.25X15 TR-75A</a></h3>
-    <p class="text-lg font-bold">16,11 €</p>
-    <p class="text-xs text-muted">Šifra: 18666</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/zr-8-25x15-tr-75a.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%208.25X15%20TR-75A">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ZRAČNICA 8.25X15 TR-75A" data-price="16.11" data-categories="zracnice,vilicarske" data-category-names="Zračnice,Viličarske">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/zr-8-25x15-tr-75a.html" class="block h-full w-full"><img src="../images/kriv_700x700.jpg" alt="ZRAČNICA 8.25X15 TR-75A" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/zr-8-25x15-tr-75a.html" class="transition hover:text-brand">ZRAČNICA 8.25X15 TR-75A</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=zracnice" class="transition hover:text-brand">Zračnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">16,11 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/zr-8-25x15-tr-75a.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%208.25X15%20TR-75A">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ŠČITNIK MOTO 2.25/2.50X17 20MM" data-price="2.91">
-  <a href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/itnik_10_700x700.jpg" alt="ŠČITNIK MOTO 2.25/2.50X17 20MM" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html">ŠČITNIK MOTO 2.25/2.50X17 20MM</a></h3>
-    <p class="text-lg font-bold">2,91 €</p>
-    <p class="text-xs text-muted">Šifra: 14454</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=%C5%A0%C4%8CITNIK%20MOTO%202.25/2.50X17%2020MM">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ŠČITNIK MOTO 2.25/2.50X17 20MM" data-price="2.91" data-categories="scitniki" data-category-names="Ščitniki">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html" class="block h-full w-full"><img src="../images/itnik_10_700x700.jpg" alt="ŠČITNIK MOTO 2.25/2.50X17 20MM" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html" class="transition hover:text-brand">ŠČITNIK MOTO 2.25/2.50X17 20MM</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=scitniki" class="transition hover:text-brand">Ščitniki</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">2,91 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/scitnik-moto-2-25-2-50x17-20mm.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=%C5%A0%C4%8CITNIK%20MOTO%202.25/2.50X17%2020MM">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ŠČITNIK 11.00/12.00X24" data-price="23.67">
-  <a href="../izdelki/scitnik-11-00-12-00x24.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/itnik_6_700x700.jpg" alt="ŠČITNIK 11.00/12.00X24" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/scitnik-11-00-12-00x24.html">ŠČITNIK 11.00/12.00X24</a></h3>
-    <p class="text-lg font-bold">23,67 €</p>
-    <p class="text-xs text-muted">Šifra: 17079</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/scitnik-11-00-12-00x24.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=%C5%A0%C4%8CITNIK%2011.00/12.00X24">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ŠČITNIK 11.00/12.00X24" data-price="23.67" data-categories="scitniki" data-category-names="Ščitniki">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/scitnik-11-00-12-00x24.html" class="block h-full w-full"><img src="../images/itnik_6_700x700.jpg" alt="ŠČITNIK 11.00/12.00X24" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/scitnik-11-00-12-00x24.html" class="transition hover:text-brand">ŠČITNIK 11.00/12.00X24</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=scitniki" class="transition hover:text-brand">Ščitniki</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">23,67 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/scitnik-11-00-12-00x24.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=%C5%A0%C4%8CITNIK%2011.00/12.00X24">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ZRAČNICA 120/70X14 TR-4 BOX" data-price="12.39">
-  <a href="../izdelki/mo-zr-120-70x14-tr-4-box.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/13882_1_1_700x700.jpg" alt="ZRAČNICA 120/70X14 TR-4 BOX" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/mo-zr-120-70x14-tr-4-box.html">ZRAČNICA 120/70X14 TR-4 BOX</a></h3>
-    <p class="text-lg font-bold">12,39 €</p>
-    <p class="text-xs text-muted">Šifra: 16600</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/mo-zr-120-70x14-tr-4-box.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%20120/70X14%20TR-4%20BOX">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ZRAČNICA 120/70X14 TR-4 BOX" data-price="12.39" data-categories="zracnice,motorske" data-category-names="Zračnice,Motorske">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    <div class="absolute left-3 top-3 z-10 flex flex-wrap gap-1.5"><span class="inline-flex items-center rounded-full bg-[#FBBC34] px-2.5 py-0.5 font-heading text-xs font-semibold text-[#242424]">Novo</span></div>
+    <a href="../izdelki/mo-zr-120-70x14-tr-4-box.html" class="block h-full w-full"><img src="../images/13882_1_1_700x700.jpg" alt="ZRAČNICA 120/70X14 TR-4 BOX" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/mo-zr-120-70x14-tr-4-box.html" class="transition hover:text-brand">ZRAČNICA 120/70X14 TR-4 BOX</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=zracnice" class="transition hover:text-brand">Zračnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">12,39 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/mo-zr-120-70x14-tr-4-box.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%20120/70X14%20TR-4%20BOX">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX" data-price="7.33">
-  <a href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/krivi_1_3_700x700.jpg" alt="ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html">ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX</a></h3>
-    <p class="text-lg font-bold">7,33 €</p>
-    <p class="text-xs text-muted">Šifra: 14446</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%2010X2/2.125%2060/90%20KRIVI%20V%20BOX">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX" data-price="7.33" data-categories="zracnice,elektricni-skiro" data-category-names="Zračnice,Električni skiro">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html" class="block h-full w-full"><img src="../images/krivi_1_3_700x700.jpg" alt="ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html" class="transition hover:text-brand">ZRAČNICA 10X2/2.125 60/90 KRIVI V BOX</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=zracnice" class="transition hover:text-brand">Zračnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">7,33 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/vl-zr-10x2-2-125-60-90-krivi-v-box.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%2010X2/2.125%2060/90%20KRIVI%20V%20BOX">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="ZRAČNICA 10X2/2.125 SCH" data-price="7.33">
-  <a href="../izdelki/vl-zr-10x2-2-125-sch-box.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/13593_1_700x700.jpg" alt="ZRAČNICA 10X2/2.125 SCH" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/vl-zr-10x2-2-125-sch-box.html">ZRAČNICA 10X2/2.125 SCH</a></h3>
-    <p class="text-lg font-bold">7,33 €</p>
-    <p class="text-xs text-muted">Šifra: 13593</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/vl-zr-10x2-2-125-sch-box.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%2010X2/2.125%20SCH">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="ZRAČNICA 10X2/2.125 SCH" data-price="7.33" data-categories="zracnice,kolesarske" data-category-names="Zračnice,Kolesarske">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/vl-zr-10x2-2-125-sch-box.html" class="block h-full w-full"><img src="../images/13593_1_700x700.jpg" alt="ZRAČNICA 10X2/2.125 SCH" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/vl-zr-10x2-2-125-sch-box.html" class="transition hover:text-brand">ZRAČNICA 10X2/2.125 SCH</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=zracnice" class="transition hover:text-brand">Zračnice</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">7,33 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/vl-zr-10x2-2-125-sch-box.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=ZRA%C4%8CNICA%2010X2/2.125%20SCH">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="TESNILO ZA TLAČILKO FI 32 SOČA" data-price="2.99">
-  <a href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/tesnilo-za-tla_ilko_web_700x700.jpg" alt="TESNILO ZA TLAČILKO FI 32 SOČA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html">TESNILO ZA TLAČILKO FI 32 SOČA</a></h3>
-    <p class="text-lg font-bold">2,99 €</p>
-    <p class="text-xs text-muted">Šifra: 07236</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=TESNILO%20ZA%20TLA%C4%8CILKO%20FI%2032%20SO%C4%8CA">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="TESNILO ZA TLAČILKO FI 32 SOČA" data-price="2.99" data-categories="tesnila" data-category-names="Tesnila">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html" class="block h-full w-full"><img src="../images/tesnilo-za-tla_ilko_web_700x700.jpg" alt="TESNILO ZA TLAČILKO FI 32 SOČA" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html" class="transition hover:text-brand">TESNILO ZA TLAČILKO FI 32 SOČA</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tesnila" class="transition hover:text-brand">Tesnila</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">2,99 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/tesnilo-za-tlacilko-fi-32-soca.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=TESNILO%20ZA%20TLA%C4%8CILKO%20FI%2032%20SO%C4%8CA">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="TESNILO DAMPER 20&quot; klinasto" data-price="9.21">
-  <a href="../izdelki/tesnilo-damper-20-klinasto.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/damper_klinasto_v1_700x700.jpg" alt="TESNILO DAMPER 20&quot; klinasto" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/tesnilo-damper-20-klinasto.html">TESNILO DAMPER 20&quot; klinasto</a></h3>
-    <p class="text-lg font-bold">9,21 €</p>
-    <p class="text-xs text-muted">Šifra: 13723</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/tesnilo-damper-20-klinasto.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=TESNILO%20DAMPER%2020%22%20klinasto">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="TESNILO DAMPER 20&quot; klinasto" data-price="9.21" data-categories="tesnila" data-category-names="Tesnila">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/tesnilo-damper-20-klinasto.html" class="block h-full w-full"><img src="../images/damper_klinasto_v1_700x700.jpg" alt="TESNILO DAMPER 20&quot; klinasto" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/tesnilo-damper-20-klinasto.html" class="transition hover:text-brand">TESNILO DAMPER 20&quot; klinasto</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tesnila" class="transition hover:text-brand">Tesnila</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">9,21 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/tesnilo-damper-20-klinasto.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=TESNILO%20DAMPER%2020%22%20klinasto">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="TESNILNI TRAK 2X10MM E" data-price="2.93">
-  <a href="../izdelki/tesnilni-trak-2x10mm-e.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/penasti_profil_10m_700x700.jpg" alt="TESNILNI TRAK 2X10MM E" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/tesnilni-trak-2x10mm-e.html">TESNILNI TRAK 2X10MM E</a></h3>
-    <p class="text-lg font-bold">2,93 €</p>
-    <p class="text-xs text-muted">Šifra: 00440</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/tesnilni-trak-2x10mm-e.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=TESNILNI%20TRAK%202X10MM%20E">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="TESNILNI TRAK 2X10MM E" data-price="2.93" data-categories="tesnila" data-category-names="Tesnila">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/tesnilni-trak-2x10mm-e.html" class="block h-full w-full"><img src="../images/penasti_profil_10m_700x700.jpg" alt="TESNILNI TRAK 2X10MM E" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/tesnilni-trak-2x10mm-e.html" class="transition hover:text-brand">TESNILNI TRAK 2X10MM E</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tesnila" class="transition hover:text-brand">Tesnila</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">2,93 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/tesnilni-trak-2x10mm-e.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=TESNILNI%20TRAK%202X10MM%20E">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000" data-price="26.29">
-  <a href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/plamaval_1_700x700.jpg" alt="PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html">PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000</a></h3>
-    <p class="text-lg font-bold">26,29 €</p>
-    <p class="text-xs text-muted">Šifra: 10596</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PENA%20ZA%20ZVO%C4%8CNO%20IZOLACIJO%203CM%202000X1000">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000" data-price="26.29" data-categories="pena" data-category-names="Pena">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html" class="block h-full w-full"><img src="../images/plamaval_1_700x700.jpg" alt="PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html" class="transition hover:text-brand">PENA ZA ZVOČNO IZOLACIJO 3CM 2000X1000</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pena" class="transition hover:text-brand">Pena</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">26,29 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/pena-za-zvocno-izolacijo-3-cm-2000x1000.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PENA%20ZA%20ZVO%C4%8CNO%20IZOLACIJO%203CM%202000X1000">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="LEPILO V RAZPRŠILCU 500ML" data-price="22.26">
-  <a href="../izdelki/lepilo-v-razprsilcu-500ml.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/weicon_700x700.jpg" alt="LEPILO V RAZPRŠILCU 500ML" width="520" height="580" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/lepilo-v-razprsilcu-500ml.html">LEPILO V RAZPRŠILCU 500ML</a></h3>
-    <p class="text-lg font-bold">22,26 €</p>
-    <p class="text-xs text-muted">Šifra: 15209</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/lepilo-v-razprsilcu-500ml.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=LEPILO%20V%20RAZPR%C5%A0ILCU%20500ML">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="LEPILO V RAZPRŠILCU 500ML" data-price="22.26" data-categories="pena" data-category-names="Pena">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/lepilo-v-razprsilcu-500ml.html" class="block h-full w-full"><img src="../images/weicon_700x700.jpg" alt="LEPILO V RAZPRŠILCU 500ML" width="520" height="580" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/lepilo-v-razprsilcu-500ml.html" class="transition hover:text-brand">LEPILO V RAZPRŠILCU 500ML</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pena" class="transition hover:text-brand">Pena</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">22,26 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/lepilo-v-razprsilcu-500ml.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=LEPILO%20V%20RAZPR%C5%A0ILCU%20500ML">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMAFLEX 3MMX1000" data-price="15.37">
-  <a href="../izdelki/gumaflex-3mmx1000.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/gumaflex_700x700.jpg" alt="GUMAFLEX 3MMX1000" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/gumaflex-3mmx1000.html">GUMAFLEX 3MMX1000</a></h3>
-    <p class="text-lg font-bold">15,37 €</p>
-    <p class="text-xs text-muted">Šifra: 16321</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/gumaflex-3mmx1000.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMAFLEX%203MMX1000">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMAFLEX 3MMX1000" data-price="15.37" data-categories="pena" data-category-names="Pena">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/gumaflex-3mmx1000.html" class="block h-full w-full"><img src="../images/gumaflex_700x700.jpg" alt="GUMAFLEX 3MMX1000" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/gumaflex-3mmx1000.html" class="transition hover:text-brand">GUMAFLEX 3MMX1000</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=pena" class="transition hover:text-brand">Pena</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">15,37 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/gumaflex-3mmx1000.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMAFLEX%203MMX1000">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="JERMEN OKROGLI FI 2" data-price="1.88">
-  <a href="../izdelki/jermen-okrogli-fi-2.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/jermen-okrogli_700x700.jpg" alt="JERMEN OKROGLI FI 2" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/jermen-okrogli-fi-2.html">JERMEN OKROGLI FI 2</a></h3>
-    <p class="text-lg font-bold">1,88 €</p>
-    <p class="text-xs text-muted">Šifra: 06768</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/jermen-okrogli-fi-2.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=JERMEN%20OKROGLI%20FI%202">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="JERMEN OKROGLI FI 2" data-price="1.88" data-categories="jermeni" data-category-names="Jermeni">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/jermen-okrogli-fi-2.html" class="block h-full w-full"><img src="../images/jermen-okrogli_700x700.jpg" alt="JERMEN OKROGLI FI 2" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/jermen-okrogli-fi-2.html" class="transition hover:text-brand">JERMEN OKROGLI FI 2</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=jermeni" class="transition hover:text-brand">Jermeni</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">1,88 €</span> <span class="text-xs text-[#595959]">M</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/jermen-okrogli-fi-2.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=JERMEN%20OKROGLI%20FI%202">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="13X1000 X Li C" data-price="13.31">
-  <a href="../izdelki/13x1000-x-concar.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/17-zobata-concar_1_70_700x700.jpg" alt="13X1000 X Li C" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/13x1000-x-concar.html">13X1000 X Li C</a></h3>
-    <p class="text-lg font-bold">13,31 €</p>
-    <p class="text-xs text-muted">Šifra: 08984</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/13x1000-x-concar.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=13X1000%20X%20Li%20C">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="13X1000 X Li C" data-price="13.31" data-categories="jermeni" data-category-names="Jermeni">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/13x1000-x-concar.html" class="block h-full w-full"><img src="../images/17-zobata-concar_1_70_700x700.jpg" alt="13X1000 X Li C" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/13x1000-x-concar.html" class="transition hover:text-brand">13X1000 X Li C</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=jermeni" class="transition hover:text-brand">Jermeni</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">13,31 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/13x1000-x-concar.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=13X1000%20X%20Li%20C">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="SAWASBELT 100 XL" data-price="0.41">
-  <a href="../izdelki/100-xl-sawasbelt.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/grupa_384_6_700x700.jpg" alt="SAWASBELT 100 XL" width="700" height="394" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/100-xl-sawasbelt.html">SAWASBELT 100 XL</a></h3>
-    <p class="text-lg font-bold">0,41 €</p>
-    <p class="text-xs text-muted">Šifra: 12437</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/100-xl-sawasbelt.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=SAWASBELT%20100%20XL">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="SAWASBELT 100 XL" data-price="0.41" data-categories="jermeni" data-category-names="Jermeni">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/100-xl-sawasbelt.html" class="block h-full w-full"><img src="../images/grupa_384_6_700x700.jpg" alt="SAWASBELT 100 XL" width="700" height="394" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/100-xl-sawasbelt.html" class="transition hover:text-brand">SAWASBELT 100 XL</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=jermeni" class="transition hover:text-brand">Jermeni</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">0,41 €</span> <span class="text-xs text-[#595959]">MM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/100-xl-sawasbelt.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=SAWASBELT%20100%20XL">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="NATIK FI 12 ČRN" data-price="0.83">
-  <a href="../izdelki/natik-fi-12-crn.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/natik-mali_web_700x700.jpg" alt="NATIK FI 12 ČRN" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/natik-fi-12-crn.html">NATIK FI 12 ČRN</a></h3>
-    <p class="text-lg font-bold">0,83 €</p>
-    <p class="text-xs text-muted">Šifra: 02769</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/natik-fi-12-crn.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=NATIK%20FI%2012%20%C4%8CRN">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="NATIK FI 12 ČRN" data-price="0.83" data-categories="drobni-gumeni-tehnicni-izdelki,natik" data-category-names="Drobni gumeni-tehnični izdelki,Natik">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/natik-fi-12-crn.html" class="block h-full w-full"><img src="../images/natik-mali_web_700x700.jpg" alt="NATIK FI 12 ČRN" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/natik-fi-12-crn.html" class="transition hover:text-brand">NATIK FI 12 ČRN</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki" class="transition hover:text-brand">Drobni gumeni-tehnični izdelki</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">0,83 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/natik-fi-12-crn.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=NATIK%20FI%2012%20%C4%8CRN">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="GUMI ČEP ŠT. 1 15/22mm" data-price="0.69">
-  <a href="../izdelki/gumi-cep-st-1.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/epi_web_14_700x700.jpg" alt="GUMI ČEP ŠT. 1 15/22mm" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/gumi-cep-st-1.html">GUMI ČEP ŠT. 1 15/22mm</a></h3>
-    <p class="text-lg font-bold">0,69 €</p>
-    <p class="text-xs text-muted">Šifra: 11122</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/gumi-cep-st-1.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=GUMI%20%C4%8CEP%20%C5%A0T.%201%2015/22mm">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="GUMI ČEP ŠT. 1 15/22mm" data-price="0.69" data-categories="drobni-gumeni-tehnicni-izdelki,gumi-cep" data-category-names="Drobni gumeni-tehnični izdelki,Gumi čep">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/gumi-cep-st-1.html" class="block h-full w-full"><img src="../images/epi_web_14_700x700.jpg" alt="GUMI ČEP ŠT. 1 15/22mm" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/gumi-cep-st-1.html" class="transition hover:text-brand">GUMI ČEP ŠT. 1 15/22mm</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki" class="transition hover:text-brand">Drobni gumeni-tehnični izdelki</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">0,69 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/gumi-cep-st-1.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=GUMI%20%C4%8CEP%20%C5%A0T.%201%2015/22mm">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="VEZICE FI 15X1 RDEČE" data-price="12.81">
-  <a href="../izdelki/vezice-fi-15x1-rdece.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/vezice-rde_e_700x700.jpg" alt="VEZICE FI 15X1 RDEČE" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/vezice-fi-15x1-rdece.html">VEZICE FI 15X1 RDEČE</a></h3>
-    <p class="text-lg font-bold">12,81 €</p>
-    <p class="text-xs text-muted">Šifra: 09253</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/vezice-fi-15x1-rdece.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=VEZICE%20FI%2015X1%20RDE%C4%8CE">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="VEZICE FI 15X1 RDEČE" data-price="12.81" data-categories="drobni-gumeni-tehnicni-izdelki,elastike" data-category-names="Drobni gumeni-tehnični izdelki,Elastike">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    <div class="absolute left-3 top-3 z-10 flex flex-wrap gap-1.5"><span class="inline-flex items-center rounded-full bg-[#FBBC34] px-2.5 py-0.5 font-heading text-xs font-semibold text-[#242424]">Novo</span></div>
+    <a href="../izdelki/vezice-fi-15x1-rdece.html" class="block h-full w-full"><img src="../images/vezice-rde_e_700x700.jpg" alt="VEZICE FI 15X1 RDEČE" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/vezice-fi-15x1-rdece.html" class="transition hover:text-brand">VEZICE FI 15X1 RDEČE</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=drobni-gumeni-tehnicni-izdelki" class="transition hover:text-brand">Drobni gumeni-tehnični izdelki</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">12,81 €</span> <span class="text-xs text-[#595959]">KG</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/vezice-fi-15x1-rdece.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=VEZICE%20FI%2015X1%20RDE%C4%8CE">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA" data-price="112.24">
-  <a href="../izdelki/plosca-poliuretan-1mmx1000x2000.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/vulkolan_700x700.jpg" alt="PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/plosca-poliuretan-1mmx1000x2000.html">PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA</a></h3>
-    <p class="text-lg font-bold">112,24 €</p>
-    <p class="text-xs text-muted">Šifra: 18024</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/plosca-poliuretan-1mmx1000x2000.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PLO%C5%A0%C4%8CA%20POLIURETAN%201MMX1000X2000%2090%C2%B0ShA">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA" data-price="112.24" data-categories="tehnicna-plastika" data-category-names="Tehnična plastika">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/plosca-poliuretan-1mmx1000x2000.html" class="block h-full w-full"><img src="../images/vulkolan_700x700.jpg" alt="PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/plosca-poliuretan-1mmx1000x2000.html" class="transition hover:text-brand">PLOŠČA POLIURETAN 1MMX1000X2000 90°ShA</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tehnicna-plastika" class="transition hover:text-brand">Tehnična plastika</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">112,24 €</span> <span class="text-xs text-[#595959]">KOM</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/plosca-poliuretan-1mmx1000x2000.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PLO%C5%A0%C4%8CA%20POLIURETAN%201MMX1000X2000%2090%C2%B0ShA">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PALICA POLIETILEN PE/HD FI 15X1000 MM" data-price="6.76">
-  <a href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/polietilen_700x700.jpg" alt="PALICA POLIETILEN PE/HD FI 15X1000 MM" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html">PALICA POLIETILEN PE/HD FI 15X1000 MM</a></h3>
-    <p class="text-lg font-bold">6,76 €</p>
-    <p class="text-xs text-muted">Šifra: 13820</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PALICA%20POLIETILEN%20PE/HD%20FI%2015X1000%20MM">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PALICA POLIETILEN PE/HD FI 15X1000 MM" data-price="6.76" data-categories="tehnicna-plastika" data-category-names="Tehnična plastika">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html" class="block h-full w-full"><img src="../images/polietilen_700x700.jpg" alt="PALICA POLIETILEN PE/HD FI 15X1000 MM" width="700" height="468" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html" class="transition hover:text-brand">PALICA POLIETILEN PE/HD FI 15X1000 MM</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tehnicna-plastika" class="transition hover:text-brand">Tehnična plastika</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">6,76 €</span> <span class="text-xs text-[#595959]">KG</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/palica-polietilen-pe-hd-fi-15x1000-mm.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PALICA%20POLIETILEN%20PE/HD%20FI%2015X1000%20MM">Povpraševanje</a>
     </div>
   </div>
-</article><article class="card flex flex-col overflow-hidden" data-product-card data-title="PALICA POLIAMID PA 6G FI 30X1000 MM" data-price="33.55">
-  <a href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html" class="block aspect-square overflow-hidden bg-white"><img src="../images/poliamid-olion_700x700.png" alt="PALICA POLIAMID PA 6G FI 30X1000 MM" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain"></a>
-  <div class="flex flex-1 flex-col gap-2 p-4">
-    <h3 class="text-base font-semibold"><a href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html">PALICA POLIAMID PA 6G FI 30X1000 MM</a></h3>
-    <p class="text-lg font-bold">33,55 €</p>
-    <p class="text-xs text-muted">Šifra: 15755</p>
-    <p><span class="badge">Na zalogi</span></p>
-    <div class="mt-auto flex flex-wrap gap-2 pt-2">
-      <a class="btn btn-ghost" href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html">Podrobnosti</a>
-      <a class="btn btn-secondary" href="mailto:info@dimet.si?subject=PALICA%20POLIAMID%20PA%206G%20FI%2030X1000%20MM">Povpraševanje</a>
+</article><article class="card group flex flex-col overflow-hidden p-0" data-product-card data-title="PALICA POLIAMID PA 6G FI 30X1000 MM" data-price="33.55" data-categories="tehnicna-plastika" data-category-names="Tehnična plastika">
+  <div class="relative aspect-square overflow-hidden border-b border-[#E8E8E8] bg-white p-4">
+    
+    <a href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html" class="block h-full w-full"><img src="../images/poliamid-olion_700x700.png" alt="PALICA POLIAMID PA 6G FI 30X1000 MM" width="700" height="700" loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-300 group-hover:scale-105"></a>
+  </div>
+  <div class="flex flex-1 flex-col gap-1.5 p-4">
+    <h3 class="font-heading text-sm font-medium leading-snug text-heading-dark sm:text-base"><a href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html" class="transition hover:text-brand">PALICA POLIAMID PA 6G FI 30X1000 MM</a></h3>
+    <p class="text-xs text-[#595959]"><a href="../izdelki/index.html?cat=tehnicna-plastika" class="transition hover:text-brand">Tehnična plastika</a></p>
+    <p class="mt-1 flex flex-wrap items-baseline gap-1"><span class="font-bold text-heading-dark text-base">33,55 €</span> <span class="text-xs text-[#595959]">KG</span></p>
+    <div class="mt-auto flex flex-wrap gap-2 pt-3">
+      <a class="btn btn-ghost min-h-[38px] px-4 text-xs" href="../izdelki/palica-poliamid-pa-6g-fi-30x1000-mm.html">Podrobnosti</a>
+      <a class="btn-brand min-h-[38px] px-4 text-xs" href="mailto:info@dimet.si?subject=PALICA%20POLIAMID%20PA%206G%20FI%2030X1000%20MM">Povpraševanje</a>
     </div>
   </div>
 </article></div>
-  <p id="no-results" class="mt-8" hidden>Ni izdelkov, ki bi ustrezali iskanju.</p>
+  <p id="no-results" class="mt-8 text-[#595959]" hidden>Ni izdelkov, ki bi ustrezali izbranemu filtru.</p>
   </div>
 </div>
 </div>
   </main>
-  <footer class="mt-24 bg-ink text-white">
-    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
-      <div>
-        <p class="text-xl font-extrabold">Dimet d.o.o.</p>
-        <p class="mt-3 max-w-xs text-sm text-white/80">Industrijski materiali za vsak izziv. Tehnična guma, cevi, pene, tesnila in trakovi.</p>
+  <footer class="mt-16 bg-[#0A0A0A] py-12 text-gray-300">
+    <div class="container-site">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-12">
+        <div class="md:col-span-6">
+          <a href="../index.html" class="inline-block rounded bg-white p-2">
+            <img src="../images/dimet-logo.jpg" alt="Dimet d.o.o." width="250" height="41" class="h-auto w-[200px]" loading="lazy">
+          </a>
+          <p class="mt-4 text-sm font-medium text-gray-200">Cene so v EUR in vključujejo DDV.</p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li>Jezerska cesta 65, 4000 Kranj</li>
+            <li><a class="footer-link" href="tel:+38641317673">+386 41 317 673</a></li>
+            <li><a class="footer-link" href="mailto:info@dimet.si">info@dimet.si</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <h2 class="font-heading text-sm font-semibold uppercase tracking-wider text-white">SPLOŠNE INFORMACIJE</h2>
+          <nav aria-label="Splošne informacije" class="mt-4">
+            <ul class="space-y-1.5"><li><a class="footer-link" href="../strani/pogoji-poslovanja.html">Pogoji poslovanja</a></li><li><a class="footer-link" href="../strani/nacin-placila.html">Način plačila</a></li><li><a class="footer-link" href="../strani/stroski-dostave.html">Stroški dostave</a></li><li><a class="footer-link" href="../strani/vracilo-blaga.html">Vračilo blaga</a></li><li><a class="footer-link" href="../strani/piskotki.html">Piškotki</a></li></ul>
+          </nav>
+        </div>
+        <div class="md:col-span-3">
+          <h2 class="font-heading text-sm font-semibold uppercase tracking-wider text-white">O NAS</h2>
+          <nav aria-label="O nas" class="mt-4">
+            <ul class="space-y-1.5"><li><a class="footer-link" href="../index.html">Domača stran</a></li><li><a class="footer-link" href="../novice/index.html">Novice</a></li><li><a class="footer-link" href="../o-nas.html">O nas</a></li><li><a class="footer-link" href="../kontakt.html">Kontakt</a></li><li><a class="footer-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li></ul>
+          </nav>
+        </div>
       </div>
-      <div class="text-sm">
-        <h2 class="font-semibold uppercase tracking-wider text-white/70">Kontakt</h2>
-        <ul class="mt-3 space-y-2">
-          <li>Jezerska cesta 65, 4000 Kranj</li>
-          <li><a class="footer-link" href="tel:+38641317673">+386 41 317 673</a></li>
-          <li><a class="footer-link" href="mailto:info@dimet.si">info@dimet.si</a></li>
-        </ul>
+      <div class="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-gray-400 sm:flex-row">
+        <p>&copy; 2025 Dimet d.o.o. Vse pravice pridržane. Izdelava: Domen Skomina</p>
+        <img src="../images/payments.png" alt="Načini plačila" width="255" height="22" class="h-[22px] w-auto" loading="lazy">
       </div>
-      <div class="text-sm">
-        <h2 class="font-semibold uppercase tracking-wider text-white/70">Informacije</h2>
-        <nav aria-label="Informacije" class="mt-3"><ul class="space-y-2"><li><a class="footer-link" href="../strani/pogosta-vprasanja.html">Pogosta vprašanja</a></li><li><a class="footer-link" href="../strani/stroski-dostave.html">Stroški dostave</a></li><li><a class="footer-link" href="../strani/nacin-placila.html">Način plačila</a></li><li><a class="footer-link" href="../strani/vracilo-blaga.html">Vračilo blaga</a></li><li><a class="footer-link" href="../strani/pogoji-poslovanja.html">Pogoji poslovanja</a></li><li><a class="footer-link" href="../strani/politika-zasebnosti.html">Politika zasebnosti</a></li><li><a class="footer-link" href="../strani/piskotki.html">Piškotki</a></li></ul></nav>
-      </div>
-    </div>
-    <div class="border-t border-white/10">
-      <p class="mx-auto max-w-6xl px-4 py-5 text-xs text-white/70 sm:px-6">&copy; 2026 Dimet d.o.o. Vse pravice pridržane.</p>
     </div>
   </footer>
   <script type="application/ld+json">
