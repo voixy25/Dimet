@@ -20,6 +20,10 @@
   h3, h4, h5, h6 {
     @apply font-heading text-heading-dark;
   }
+  input::placeholder,
+  textarea::placeholder {
+    color: #767676;
+  }
 }
 
 @layer components {
@@ -73,10 +77,10 @@
     @apply inline-flex rounded-full bg-slide-light px-2.5 py-1 text-xs font-medium text-title-dark;
   }
   .chip {
-    @apply inline-flex min-h-[42px] items-center rounded-full border border-[#E8E8E8] bg-white px-4 py-2 text-sm font-medium text-title-dark hover:border-brand hover:text-brand;
+    @apply inline-flex min-h-[42px] items-center rounded-full border border-[#E8E8E8] bg-white px-4 py-2 text-sm font-medium text-title-dark hover:border-brand hover:text-brand-dark;
   }
   .nav-link {
-    @apply inline-flex min-h-[44px] items-center font-sans text-[13px] font-bold uppercase tracking-wide text-title-dark transition hover:text-brand;
+    @apply inline-flex min-h-[44px] items-center font-sans text-[13px] font-bold uppercase tracking-wide text-title-dark transition hover:text-brand-dark;
   }
   .nav-link[aria-current="page"],
   a[aria-current="page"] {
@@ -92,7 +96,7 @@
     @apply flex flex-wrap items-center gap-2 text-sm text-body-text;
   }
   .breadcrumb a {
-    @apply inline-block py-2 hover:text-brand;
+    @apply inline-block py-2 hover:text-brand-dark;
   }
   .grid-products {
     @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
@@ -100,7 +104,7 @@
 
   /* Woodmart Header Electronics & Categories */
   .topbar {
-    @apply bg-[#007BC4] text-xs font-sans text-white;
+    @apply bg-[#007BC4] py-2 text-xs font-sans text-white;
   }
   .topbar a {
     @apply inline-flex items-center transition hover:text-white/80;
@@ -120,7 +124,7 @@
     @apply flex h-[52px] w-full items-center justify-between bg-[#007BC4] px-6 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#006AA9];
   }
   .category-list {
-    @apply border border-t-0 border-[#E8E8E8] bg-white text-sm text-title-dark;
+    @apply border border-t-0 border-[#E8E8E8] bg-white p-2 text-sm text-title-dark;
   }
   .category-list > li {
     @apply relative;
@@ -129,7 +133,7 @@
     @apply border-t border-[#E8E8E8];
   }
   .category-list > li > a {
-    @apply flex min-h-[41px] items-center justify-between px-5 py-2 font-sans text-[13px] font-normal text-title-dark transition hover:bg-[#F2F2F2] hover:text-[#007BC4];
+    @apply flex min-h-[41px] items-center justify-between px-5 py-2 font-sans text-[13px] font-normal text-title-dark transition hover:bg-[#F2F2F2] hover:text-[#006AA9];
   }
   .category-flyout {
     @apply hidden absolute left-full top-0 z-40 min-h-full w-64 border border-[#E8E8E8] bg-white p-5 shadow-lg;

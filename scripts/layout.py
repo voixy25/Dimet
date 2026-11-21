@@ -170,7 +170,7 @@ def _category_flyout_items(root: str, is_home: bool) -> str:
     for label, cat_slug, subitems in CATEGORY_MENU:
         sub_links = "".join(
             f'<li><a href="{root}izdelki/index.html?q={quote(sq)}" '
-            'class="block py-1.5 text-sm text-body-text transition hover:text-[#007BC4]">'
+            'class="block py-1.5 text-sm text-body-text transition hover:text-[#006AA9]">'
             f'{escape(sl)}</a></li>'
             for sl, sq in subitems
         )
@@ -180,7 +180,7 @@ def _category_flyout_items(root: str, is_home: bool) -> str:
             f'<a href="{cat_href}">'
             f'<span>{escape(label)}</span>{chevron}</a>'
             '<div class="category-flyout">'
-            f'<p class="mb-2 border-b border-[#E8E8E8] pb-2 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">{escape(label)}</p>'
+            f'<p class="mb-2 border-b border-[#E8E8E8] pb-3 font-heading text-xs font-semibold uppercase tracking-wide text-[#242424]">{escape(label)}</p>'
             f'<ul class="space-y-1">{sub_links}</ul>'
             f'<p class="mt-3 border-t border-[#E8E8E8] pt-2">'
             f'<a href="{cat_href}" class="text-xs font-semibold uppercase text-[#007BC4] hover:text-[#006AA9]">Prikaži vse &rarr;</a>'
@@ -246,15 +246,15 @@ def _render_topbar(root: str) -> str:
 def _render_header_actions(root: str) -> str:
     tel_href = f"tel:{PHONE.replace(' ', '')}"
     return f"""      <div class="flex items-center gap-3 lg:gap-4">
-        <a href="{tel_href}" class="hidden items-center gap-2 text-sm font-bold text-[#242424] transition hover:text-[#007BC4] xl:inline-flex">
+        <a href="{tel_href}" class="hidden items-center gap-2 text-sm font-bold text-[#242424] transition hover:text-[#006AA9] xl:inline-flex">
           <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>{PHONE}</span>
         </a>
-        <a href="{root}kontakt.html" aria-label="Kontakt" title="Kontakt" class="hidden items-center gap-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#007BC4] sm:inline-flex">
+        <a href="{root}kontakt.html" aria-label="Kontakt" title="Kontakt" class="hidden items-center gap-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#006AA9] sm:inline-flex">
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           <span class="hidden md:inline">Kontakt</span>
         </a>
-        <a href="{root}izdelki/index.html" aria-label="Katalog izdelkov" title="Izdelki" class="relative inline-flex items-center gap-1.5 p-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#007BC4]">
+        <a href="{root}izdelki/index.html" aria-label="Katalog izdelkov" title="Izdelki" class="relative inline-flex items-center gap-1.5 p-1.5 text-[13px] font-bold uppercase text-[#242424] transition hover:text-[#006AA9]">
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="hidden md:inline">Izdelki</span>
         </a>
@@ -276,11 +276,11 @@ def header(depth: int, current: str = "", is_home: bool | None = None) -> str:
         for href, label in NAV
     )
     mobile_nav = "".join(
-        f'<a href="{root}{href}" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#007BC4]"{_current_attr(href, current)}>{label}</a>'
+        f'<a href="{root}{href}" class="block border-b border-[#E8E8E8] py-3 font-sans text-[13px] font-bold uppercase text-[#242424] hover:text-[#006AA9]"{_current_attr(href, current)}>{label}</a>'
         for href, label in NAV
     )
     mobile_cats = "".join(
-        f'<a href="{root}izdelki/index.html?cat={quote(cat_slug)}" class="block py-1.5 text-sm text-body-text hover:text-[#007BC4]">{escape(label)}</a>'
+        f'<a href="{root}izdelki/index.html?cat={quote(cat_slug)}" class="block py-1.5 text-sm text-body-text hover:text-[#006AA9]">{escape(label)}</a>'
         for label, cat_slug, _ in CATEGORY_MENU
     )
 

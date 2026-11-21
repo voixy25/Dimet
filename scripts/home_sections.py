@@ -301,7 +301,7 @@ def news_section(posts: list[dict]) -> str:
             f'<span class="absolute bottom-0 left-4 z-10 bg-[#007BC4] px-3 py-1 font-heading text-[11px] font-semibold uppercase tracking-wide text-white">{escape(cat_name)}</span>'
             '</div>'
             '<div class="flex flex-1 flex-col p-6">'
-            f'<h3 class="font-heading text-lg font-semibold leading-snug text-[#242424]"><a href="{escape(href)}" class="transition hover:text-[#007BC4]">{escape(post["title"])}</a></h3>'
+            f'<h3 class="font-heading text-lg font-semibold leading-snug text-[#242424]"><a href="{escape(href)}" class="transition hover:text-[#006AA9]">{escape(post["title"])}</a></h3>'
             f'<p class="mt-3 line-clamp-3 text-sm leading-relaxed text-[#595959]">{escape(post.get("excerpt") or "")}</p>'
             f'<p class="mt-auto pt-4"><a href="{escape(href)}" class="inline-flex items-center gap-1.5 font-heading text-xs font-semibold uppercase tracking-wide text-[#007BC4] transition hover:text-[#006AA9]">Nadaljuj z branjem <span aria-hidden="true">&rarr;</span></a></p>'
             '</div>'
@@ -352,7 +352,7 @@ def home_body(seasonal_cards: str, sidebar_rows: str, tabs: list[dict], posts: l
 def _shop_category_sidebar(categories: list[dict]) -> str:
     """Render full parent + subcategory filter sidebar for izdelki/index.html."""
     items: list[str] = [
-        '<li><a href="index.html" data-cat-filter="" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] font-semibold text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]"><span>Vsi izdelki</span></a></li>'
+        '<li><a href="index.html" data-cat-filter="" data-base-color="text-[#242424]" class="flex items-center justify-between px-5 py-2.5 text-[13px] font-semibold text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#006AA9]"><span>Vsi izdelki</span></a></li>'
     ]
     for cat in categories:
         subs = cat.get("subcategories") or []
@@ -360,7 +360,7 @@ def _shop_category_sidebar(categories: list[dict]) -> str:
         if subs:
             sub_links = "".join(
                 f'<li><a href="index.html?cat={quote(sub["slug"])}" data-cat-filter="{escape(sub["slug"])}" data-base-color="text-[#555555]" '
-                'class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#007BC4]">'
+                'class="flex items-center justify-between py-1.5 pl-8 pr-4 text-xs text-[#555555] transition hover:text-[#006AA9]">'
                 f'<span>{escape(sub["name"])}</span><span>({sub.get("count", 0)})</span></a></li>'
                 for sub in subs
             )
@@ -368,7 +368,7 @@ def _shop_category_sidebar(categories: list[dict]) -> str:
         items.append(
             '<li class="border-t border-[#E8E8E8]">'
             f'<a href="index.html?cat={quote(cat["slug"])}" data-cat-filter="{escape(cat["slug"])}" data-base-color="text-[#242424]" '
-            'class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#007BC4]">'
+            'class="flex items-center justify-between px-5 py-2.5 text-[13px] text-[#242424] transition hover:bg-[#F2F2F2] hover:text-[#006AA9]">'
             f'<span>{escape(cat["name"])}</span><span class="text-xs text-[#595959]">({cat.get("count", 0)})</span></a>'
             f'{sub_html}</li>'
         )

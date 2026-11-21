@@ -247,7 +247,7 @@ def compact_product_row(p: Product) -> str:
         '<article class="flex items-center gap-3 py-2.5">'
         f'<a href="{href}" class="h-16 w-16 shrink-0 overflow-hidden border border-[#E8E8E8] bg-white p-1">{thumb}</a>'
         '<div class="min-w-0 flex-1">'
-        f'<h4 class="line-clamp-2 font-heading text-xs font-medium leading-snug text-[#242424]"><a href="{href}" class="transition hover:text-[#007BC4]">{esc(p["title"])}</a></h4>'
+        f'<h4 class="line-clamp-2 font-heading text-xs font-medium leading-snug text-[#242424]"><a href="{href}" class="transition hover:text-[#006AA9]">{esc(p["title"])}</a></h4>'
         f'<p class="mt-1">{price_str}</p>'
         '</div>'
         '</article>'
