@@ -51,9 +51,9 @@ module.exports = {
         "accent-hover": "#006AA9",
       },
       fontFamily: {
-        sans: ["Lato", "Arial", "Helvetica", "sans-serif"],
+        sans: ["Source Sans 3", "Arial", "Helvetica", "sans-serif"],
         heading: ["Poppins", "Arial", "Helvetica", "sans-serif"],
-        accent: ["Montserrat", "sans-serif"],
+        accent: ["Poppins", "Arial", "Helvetica", "sans-serif"],
       },
       maxWidth: {
         container: "1222px",

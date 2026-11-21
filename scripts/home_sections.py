@@ -130,7 +130,6 @@ def promo_banners() -> str:
             "width": 700,
             "height": 350,
             "alt": "Zračnice",
-            "eyebrow": "NOTRANJA PODPORA",
             "title": "ZRAČNICE",
             "copy": "Vzdržljive, elastične, popolno prileganje.",
             "href": "izdelki/index.html?cat=zracnice",
@@ -141,7 +140,6 @@ def promo_banners() -> str:
             "width": 700,
             "height": 350,
             "alt": "Ščitniki",
-            "eyebrow": "ZUNANJA ZAŠČITA",
             "title": "ŠČITNIKI",
             "copy": "Zanesljiva zaščita platišč in zračnic v vseh pogojih.",
             "href": "izdelki/index.html?cat=scitniki",
@@ -152,13 +150,11 @@ def promo_banners() -> str:
     for b in banners:
         if b["dark"]:
             overlay = '<div class="absolute inset-0 bg-gradient-to-r from-[#005B94]/85 via-[#005B94]/45 to-transparent" aria-hidden="true"></div>'
-            eyebrow_cls = "text-white/95"
             title_cls = "text-white"
             copy_cls = "text-white/95"
             btn_cls = "btn bg-white text-[#242424] hover:bg-[#F2F2F2]"
         else:
             overlay = '<div class="absolute inset-0 bg-gradient-to-r from-[#F2F2F2]/95 via-[#F2F2F2]/80 to-transparent" aria-hidden="true"></div>'
-            eyebrow_cls = "text-[#006AA9]"
             title_cls = "text-[#242424]"
             copy_cls = "text-[#4A4A4A]"
             btn_cls = "btn-brand"
@@ -168,7 +164,6 @@ def promo_banners() -> str:
             'class="absolute inset-0 h-full w-full object-cover object-right transition duration-500 group-hover:scale-105">'
             f'{overlay}'
             '<div class="relative z-10 max-w-[85%] p-6 sm:max-w-[65%] sm:p-9">'
-            f'<p class="font-accent text-[11px] font-bold uppercase tracking-[0.16em] {eyebrow_cls}">{escape(b["eyebrow"])}</p>'
             f'<h2 class="mt-2 font-heading text-2xl font-bold uppercase sm:text-[28px] {title_cls}">{escape(b["title"])}</h2>'
             f'<p class="mt-2 text-sm leading-relaxed {copy_cls}">{escape(b["copy"])}</p>'
             f'<p class="mt-5"><a href="{escape(b["href"])}" class="{btn_cls} uppercase tracking-wide">OGLED PONUDBE</a></p>'
@@ -200,7 +195,6 @@ def wheelbarrow_showcase() -> str:
   <div class="container-site relative z-10 py-12 lg:py-14">
     <div class="grid items-center gap-8 lg:grid-cols-12">
       <div class="lg:col-span-6">
-        <p class="font-accent text-xs font-bold uppercase tracking-[0.18em] text-[#FBBC34]">PREVERJENA KAKOVOST</p>
         <h2 id="showcase-samokolnica" class="mt-3 font-heading text-2xl font-bold uppercase leading-tight text-white sm:text-3xl lg:text-4xl">DIMET VARJENA SAMOKOLNICA 80L</h2>
         <p class="mt-3 max-w-lg text-sm leading-relaxed text-gray-200 sm:text-base">Trpežno varjeno ogrodje, pocinkana 80-litrska posoda in kakovostna izdelava za dolgoletno uporabo na gradbišču in okoli hiše.</p>
         <div class="mt-7 flex flex-wrap gap-3">
@@ -258,7 +252,6 @@ def split_featured_section(sidebar_rows_html: str, tabs: list[dict]) -> str:
         <img src="images/profil-trak.png" alt="Gumeni profili" width="400" height="500" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105">
         <div class="absolute inset-0 bg-gradient-to-b from-[#005B94]/85 via-[#005B94]/45 to-transparent" aria-hidden="true"></div>
         <div class="relative z-10">
-          <p class="font-accent text-[11px] font-bold uppercase tracking-[0.16em] text-white/95">VEČ VRST</p>
           <h3 class="mt-2 font-heading text-2xl font-bold uppercase leading-tight text-white">GUMENI PROFILI</h3>
           <p class="mt-5"><a href="izdelki/index.html?cat=profili" class="btn bg-white px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#242424] hover:bg-[#F2F2F2]">OGLED PONUDBE</a></p>
         </div>
